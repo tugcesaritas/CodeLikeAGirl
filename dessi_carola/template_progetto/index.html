@@ -1,0 +1,200 @@
+
+<!DOCTYPE html>
+
+<!---------------------------------
+HEAD
+le informazioni sull'intestazione della pagina
+----------------------------------->
+
+
+<head>
+    <!-- TITOLO -->
+    <title>Carola Dessi</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS BOOTSTRAP
+    -->
+    <link rel="stylesheet" href="bootstrap.css">
+
+    <!-- CSS AGGIUNTIVO -->
+    <!-- NB il CSS che referenzio dopo sovrascrive quello che referenzio prima
+    quindi se chiamo delle classi nello stesso modo del primo nel secondo CSS
+    le sovrascrivo solo per quegli attributi che definisco
+
+
+    <link rel="stylesheet" href="style.css">-->
+</head>
+
+
+<!---------------------------------
+BODY
+Il contenuto della pagina
+----------------------------------->
+<body>
+
+
+    <div class="container maincontainer">
+
+
+      <!---------------------------------
+      INTESTAZIONE
+      In questa sezione l'intestazione della pagina visibile; possiamo mettere uno sfondo, o regolarne la grandezza con il CSS
+      ----------------------------------->
+
+
+        <div class="jumbotron"> <!------------ qui se provate a riscrivere la classe jumbotron nel file style.css, potreste aggiungere uno sfondo per esempio-->
+            <!--
+            I miei dati
+            Qui possiamo inserire una nostra foto, il nostro nome e un titolo
+            -->
+            <div class="row intestazione">
+                <!--
+                usando il template di bootstrap, questa immagine, la nostra foto, ha i bordi ed e' responsive
+                -->
+                <div class="col-sm-6">
+                  <img class="img-thumbnail img-responsive" max-width="300" src="http://media.npr.org/assets/img/2017/03/30/purr2_sq-d51a3234fd8b7e5494a65a7c052554243fc8f8bc-s900-c85.jpg">
+                </div>
+                <div class="col-sm-6">
+                  <h1 >Carola Dessi</h1>
+                  <h3 >studentessa</h3>
+                  <h4> Sono una ragazza di 14 anni, vivo a milano. Sono nata il 25 Febbraio del 2003, frerquento la prima liceo dell'indirizzo liceo lingustico. </h4>
+
+
+                  <br><br><br>
+
+                  <p class="cta"><a class="btn btn-primary btn-lg" >Push Me! &raquo;</a></p>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!---------------------------------
+        COLONNA: col1
+        questo e' il primo div con alcune sezioni al suo interno
+        utilizzando il nome della sua classe col1 e scrivendo CSS specifico, posso modificare la sua apparenza
+        ----------------------------------->
+
+
+
+        <div class="row">
+        <div class="col-sm-4">
+
+          <div class="container col1">
+              <!--
+              I miei contatti
+              -->
+
+              <div class="contact-container container-block">
+                  <ul class="list contact-list">
+                      <li><a href="carolarita.dessi@gmail.com" >mail</a></li>
+                      <li><a href="#" target="_blank"  >github</a></li>
+                      <li><a href="https://instagram.com/caroladessi" target="_blank"  >@twittername</a></li>
+                  </ul>
+              </div>
+
+
+
+              <!--
+              I miei studi
+              -->
+
+              <div class="studi">
+                  <h2 class="section-title">frequento il liceo lingustico</h2>
+
+
+                  <!-- Elemento 1-->
+                  
+
+                  <!-- Elemento 2-->
+
+                  <ul  class="education">
+                      <li class="nomeed">Diploma di Terza Media</li>
+                      <li class="doveed">Educandato statale Setti Carraro dalla Chiesa, Milano</li>
+
+
+                  </ul>
+              </div>
+
+
+
+              <!--
+              Lingue che parlo
+              -->
+
+              <div class="lingue">
+                  <h2 class="section-title">Languages</h2>
+                  <ul class="lingueli">
+                      <li>Italiano <span class="lang-desc">(Native)</span></li>
+                      <li>Inglese <span class="lang-desc">(Professional)</span></li>
+<li> Francese <span class="lang-desc"> (professional)</span></li>
+                      <li>Spagnolo <span class="lang-desc">(Beginner)</span></li>
+                  </ul>
+              </div>
+
+
+
+          </div>
+        </div>
+
+        <!---------------------------------
+        COLONNA: col2
+        questo e' il secondo div con alcune sezioni al suo interno
+        utilizzando il nome della sua classe col2 e scrivendo CSS specifico, posso modificare la sua apparenza
+        ----------------------------------->
+
+        <div class="col-sm-8">
+          <div class="container col2">
+
+              <section class="section summary-section">
+                  <h2 class="section-title">About me</h2>
+                  <div class="summary">
+                      <p>Sono una studentessa del primo anno del liceo lingustico. Sono una persona solare, generalmente gentile e disponibile. Quando conosco una persona inizialmente sono timida, ma conoscendola meglio mi apro e mi trasformo in una ragazza aperta, socievole e quando serve schietta. Mi piacerebbe molto studiare all'estero, e, magari un futuro, andare ad abitare e lavorare al di fuori dell'Italia</p>
+                  </div>
+              </section>
+
+
+
+              <section class="progetti">
+                <h2 class="section-title">Progetti</h2>
+                <div class="row">
+
+                  <div class="col-sm-4 prog1">
+                      <p>In questo momento penso a terminare quest'anno scolastico senza debiti di modo che possa trascorrere un'estate tranquilla</p>
+                  </div>
+                  <div class="col-sm-4 prog2">
+                      <p>Terminato il liceo quasi sicuramente frequentero` l'universita`. La facolta` non e` ancora precisata.</p>
+                  </div>
+                  <div class="col-sm-4 prog3">
+                      <p>Passerei tutte le mie giornate a leggere e/o ascoltare le canzoni del mio gruppo preferito: "Counterfeit"</p>
+                  </div>
+
+                </div>
+
+              </section>
+
+              <section class="passioni">
+                  <h2 class="section-title">Passioni</h2>
+
+                  <div class="row">
+                    <div class="col-sm-6 pass1">
+                        <img src="http://static2.vivimilano.corriere.it/wp-content/uploads/2016/04/counterfeit-jamie-campbell-bower-band-2-628x353.jpg" class="img-thumbnail img-responsive" max-width="200">
+                        <p><img src="https://lh3.googleusercontent.com/BbqN8GpAephpCNwTBuB8SiFTPT1zFccYyuPd4qRRQRTQPXU5d4F1wuVWfEJh3L4RL3wIKc6BeQ=w640-h400-e365" alt=""></p>
+                    </div>
+                    <div class="col-sm-6 pass2">
+                      <img src="" class="img-thumbnail img-responsive" max-width="200">
+                        <p>
+                          <img src="http://www.lasicilia.it/resizer/690/442/true/20160419/image/cavallo.jpg--mandria_di_cavalli_invade_ferrovia_messina_palermo__due_animali_abbattuti.jpg" class="img-thumbnail img-responsive
+                          "</p>
+                    </div>
+
+                  </div>
+              </section>
+
+
+          </div>
+      </div>
+    </div>
+</body>
+</html>
