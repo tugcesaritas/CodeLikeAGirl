@@ -1,0 +1,201 @@
+
+<!DOCTYPE html>
+
+<!---------------------------------
+HEAD
+le informazioni sull'intestazione della pagina
+----------------------------------->
+
+
+<head>
+    <!-- TITOLO -->
+    <title>Erika Dikele</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS BOOTSTRAP-->
+    <link rel="stylesheet" href="bootstrap.css">
+
+    <!-- CSS AGGIUNTIVO -->
+    <!-- NB il CSS che referenzio dopo sovrascrive quello che referenzio prima
+    quindi se chiamo delle classi nello stesso modo del primo nel secondo CSS
+    le sovrascrivo solo per quegli attributi che definisco-->
+
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<!---------------------------------
+BODY
+Il contenuto della pagina
+----------------------------------->
+<body>
+
+
+    <div class="container maincontainer">
+
+
+      <!---------------------------------
+      INTESTAZIONE
+      In questa sezione l'intestazione della pagina visibile; possiamo mettere uno sfondo, o regolarne la grandezza con il CSS
+      ----------------------------------->
+
+
+        <div class="jumbotron"> <!------------ qui se provate a riscrivere la classe jumbotron nel file style.css, potreste aggiungere uno sfondo per esempio-->
+            <!--
+            I miei dati
+            Qui possiamo inserire una nostra foto, il nostro nome e un titolo
+            -->
+            <div class="row intestazione">
+                <!--
+                usando il template di bootstrap, questa immagine, la nostra foto, ha i bordi ed e' responsive
+                -->
+                <div class="col-sm-6">
+                  <img class="img-thumbnail img-responsive" max-width="300" height="220px" width="220px" src="IMG-20160811-WA0015.jpg">
+                </div>
+                <div class="col-sm-6">
+                  <h1 >Erika Dikele Antonio Mawa</h1>
+                  <h2>studentessa</h2>
+                  <h3>Basket.</h3>
+
+
+                  <br><br><br>
+
+                  <p class="cta"><a class="btn btn-primary btn-lg" > Dik &raquo;</a></p>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!---------------------------------
+        COLONNA: col1
+        questo e' il primo div con alcune sezioni al suo interno
+        utilizzando il nome della sua classe col1 e scrivendo CSS specifico, posso modificare la sua apparenza
+        ----------------------------------->
+
+
+
+        <div class="row">
+        <div class="col-sm-4">
+
+          <div class="container col1">
+              <!--
+              I miei contatti
+              -->
+
+              <div class="contact-container container-block">
+                  <ul class="list contact-list">
+                      <li><a href="mailto:erika.dikele@mail.com" >mail</a></li>
+                      <li><a href="#" target="_blank"  >github</a></li>
+                      <li><a href="https://www.instagram.com/erika_dikele" target="_blank"  >@erika_dikele</a></li>
+                  </ul>
+              </div>
+
+
+
+              <!--
+              I miei studi
+              -->
+
+              <div class="studi">
+                  <h2 class="section-title">Education</h2>
+
+
+                  <!-- Elemento 1-->
+                  <ul class="education">
+                      <li class="nomeed">MSc in Engineering and Management</li>
+                      <li class="doveed">Politecnico di Torino</li>
+                      <li class="descrizioneed">Parole parole parole... descrizione descrizione descrizione... io sono un testo lungo a piacere!</li>
+                  </ul>
+
+                  <!-- Elemento 2-->
+
+                  <ul  class="education">
+                      <li class="nomeed">Diploma medie</li>
+                      <li class="doveed">Liceo Gianbattista Vico</li>
+                      <li class="descrizioneed">Frequento il liceo scientifico da due anni e sono soddisfatta della scuola che ho scelto </li>
+
+                  </ul>
+              </div>
+
+
+
+              <!--
+              Lingue che parlo
+              -->
+
+              <div class="lingue">
+                  <h2 class="section-title">Languages</h2>
+                  <ul class="lingueli">
+                      <li>Italiano <span class="lang-desc"></span></li>
+                      <li>Inglese <span class="lang-desc"></span></li>
+                      <li>Francese <span class="lang-desc"></span></li>
+                  </ul>
+              </div>
+
+
+
+          </div>
+        </div>
+
+        <!---------------------------------
+        COLONNA: col2
+        questo e' il secondo div con alcune sezioni al suo interno
+        utilizzando il nome della sua classe col2 e scrivendo CSS specifico, posso modificare la sua apparenza
+        ----------------------------------->
+
+        <div class="col-sm-8">
+          <div class="container col2">
+
+              <section class="section summary-section">
+                  <h2 class="section-title">About me</h2>
+                  <div class="summary">
+                      <p>Sono una studentessa di un liceo scientifico a Milano. Faccio parte di una famiglia molto numerosa, composta da me, le mie tre sorelle, mio fratello e i miei genitori. Pratico basket a livello agonistico e nuoto. Mi piace ascoltare la musica e l'arrampicata.</p>
+                  </div>
+              </section>
+
+
+
+              <section class="progetti">
+                <h2 class="section-title">Sogni</h2>
+                <div class="row">
+
+                  <div class="col-sm-4 prog1">
+                    <img class="img-thumbnail img-responsive" max-width="200" height="220px" width="220px" src="foto/IMG_20170814_110920.jpg">
+                      <p> Il primo dei miei progetti e' volare. Questa passione la trasmessa mio padre che lo pratica, a me e a mio fratello. Ora sto aspettando questa estate per cominciare il corso.</p>
+                  </div>
+                  <div class="col-sm-4 prog2">
+                      <p>Io sono l'esempio di un progetto, qui puoi inserire immagini e descrizioni e link</p>
+                  </div>
+                  <div class="col-sm-4 prog3">
+                      <p>Io sono l'esempio di un progetto, qui puoi inserire immagini e descrizioni e link</p>
+                  </div>
+
+                </div>
+
+              </section>
+
+              <section class="passioni">
+                  <h2 class="section-title">Passioni</h2>
+
+                  <div class="row">
+                    <div class="col-sm-6 pass1">
+                        <img class="img-thumbnail img-responsive" max-width="200" height="200px" width="200px" src="foto/IMG-20160811-WA0015.jpg">
+                        <p>Io sono l'esempio di una passione, qui puoi inserire immagini e descrizioni e link</p>
+                    </div>
+                    <div class="col-sm-6 pass2">
+                      <img class="img-thumbnail img-responsive" max-width="200" height="220px" width="220px" src="foto/basket1.jpg">
+                        <p>Io sono l'esempio di una passione, qui puoi inserire immagini e descrizioni e link</p>
+                    </div>
+
+                  </div>
+              </section>
+
+
+          </div>
+      </div>
+    </div>
+</body>
+</html>
