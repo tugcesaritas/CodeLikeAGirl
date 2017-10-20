@@ -1,0 +1,194 @@
+
+<!DOCTYPE html>
+
+<!---------------------------------
+HEAD
+le informazioni sull'intestazione della pagina
+----------------------------------->
+
+
+<head>
+    <!-- TITOLO -->
+    <title>CV Template</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS BOOTSTRAP-->
+    <link rel="stylesheet" href="bootstrap.css">
+
+    <!-- CSS AGGIUNTIVO -->
+    <!-- NB il CSS che referenzio dopo sovrascrive quello che referenzio prima
+    quindi se chiamo delle classi nello stesso modo del primo nel secondo CSS
+    le sovrascrivo solo per quegli attributi che definisco-->
+
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<!---------------------------------
+BODY
+Il contenuto della pagina
+----------------------------------->
+<body>
+
+
+    <div class="container maincontainer">
+
+
+      <!---------------------------------
+      INTESTAZIONE
+      In questa sezione l'intestazione della pagina visibile; possiamo mettere uno sfondo, o regolarne la grandezza con il CSS
+      ----------------------------------->
+
+
+        <div class="jumbotron"> <!------------ qui se provate a riscrivere la classe jumbotron nel file style.css, potreste aggiungere uno sfondo per esempio-->
+            <!--
+            I miei dati
+            Qui possiamo inserire una nostra foto, il nostro nome e un titolo
+            -->
+            <div class="row intestazione">
+                <!--
+                usando il template di bootstrap, questa immagine, la nostra foto, ha i bordi ed e' responsive
+                -->
+                <div class="col-sm-6">
+                  <img class="img-thumbnail img-responsive" max-width="300" src="https://scontent-mxp1-1.xx.fbcdn.net/v/t1.0-9/19601449_754225398093838_4497927096463169734_n.jpg?oh=0635b53e8a104eeaa4863770a7feee15&oe=5A8618DB">
+                </div>
+                <div class="col-sm-6">
+                  <h1 >Sofia Re</h1>
+                  <h3 >studentessa</h3>
+                  <h4>Basket Femminile Milano</h4>
+                  <h4>03/05/02</h4>
+
+
+                  <br><br><br>
+
+                  <p class="cta"><a class="btn btn-primary btn-lg" href="https://instagram.com/_sofiaa_3">Instagram &raquo;</a></p>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!---------------------------------
+        COLONNA: col1
+        questo e' il primo div con alcune sezioni al suo interno
+        utilizzando il nome della sua classe col1 e scrivendo CSS specifico, posso modificare la sua apparenza
+        ----------------------------------->
+
+
+
+        <div class="row">
+        <div class="col-sm-4">
+
+          <div class="container col1">
+              <!--
+              I miei contatti
+              -->
+
+              <div class="contact-container container-block">
+                  <ul class="list contact-list">
+                      <li><a href="mailto:sofiarex3@gmail.com" >sofiarex3@gmail.com</a></li>
+                      <li><a href="https://www.facebook.com/profile.php?id=100005191544898" target="_blank" >Facebook</a></li>
+                      <li><a href="https://web.telegram.org/#/im" target="_blank"  >Telegram</a></li>
+                  </ul>
+              </div>
+
+
+
+              <!--
+              I miei studi
+              -->
+
+              <div class="studi">
+                  <h2 class="section-title">Education</h2>
+
+
+                  <!-- Elemento 1-->
+                  <ul  class="education">
+                      <li class="nomeed">Liceo Scientifico delle scienze applicate</li>
+                      <li class="doveed">IISA Cesaris</li>
+
+                  </ul>
+              </div>
+
+
+
+              <!--
+              Lingue che parlo
+              -->
+
+              <div class="lingue">
+                  <h2 class="section-title">Languages</h2>
+                  <ul class="lingueli">
+                      <li>Italiano <span class="lang-desc"></span></li>
+                      <li>Inglese <span class="lang-desc"></span></li>
+                      <li>Francese <span class="lang-desc"></span></li>
+                  </ul>
+              </div>
+
+
+
+          </div>
+        </div>
+
+        <!---------------------------------
+        COLONNA: col2
+        questo e' il secondo div con alcune sezioni al suo interno
+        utilizzando il nome della sua classe col2 e scrivendo CSS specifico, posso modificare la sua apparenza
+        ----------------------------------->
+
+        <div class="col-sm-8">
+          <div class="container col2">
+
+              <section class="section summary-section">
+                  <h2 class="section-title">About me</h2>
+                  <div class="summary">
+                      <p>Sono una ragazza molto sportiva, aperta, intraprendente; ho numerosi amici, tra i quali ho un rapporto speciale con Alessia, che per me &eacute come una sorella.</p>
+                  </div>
+              </section>
+
+
+
+              <section class="progetti">
+                <h2 class="section-title">Progetti</h2>
+                <div class="row">
+
+                  <div class="col-sm-4 prog1">
+                      <p>All' universit&agrave; vorrei intraprendere il percorso di studi della medicina; dopo la laurea vorrei fare specializzazioni per diventare o chirurgo o poliziotta scientifica.
+
+                      </p>
+                  </div>
+                  <div class="col-sm-4 prog2">
+                      <p>Da grande vorrei avere un lavoro, una famiglia, una casa, due cani.</p>
+                  </div>
+                  <div class="col-sm-4 prog3">
+                      <p>Spero che le amicizie di adesso si portanno, in futuro, consolidare.</p>
+                  </div>
+
+                </div>
+
+              </section>
+
+              <section class="passioni">
+                  <h2 class="section-title">Passioni</h2>
+
+                  <div class="row">
+                    <div class="col-sm-6 pass1">
+                        <img src="alessia.jpg" class="img-thumbnail img-responsive" max-width="200">
+                        <p>Una delle cose che preferisco &egrave trascorrere il tempo con Alessia.</p>
+                    </div>
+                    <div class="col-sm-6 pass2">
+                      <img src="basket.jpg" class="img-thumbnail img-responsive" max-width="200">
+                        <p>La cosa che mi appassiona maggiormente &egrave il basket, uno sport in cui la squadra &egrave l'elemento fondamentale.</p>
+                    </div>
+
+                  </div>
+              </section>
+
+
+          </div>
+      </div>
+    </div>
+</body>
+</html>
