@@ -1,0 +1,211 @@
+
+<!DOCTYPE html>
+
+<!---------------------------------
+HEAD
+le informazioni sull'intestazione della pagina
+----------------------------------->
+
+
+<head>
+    <!-- TITOLO -->
+    <title>Giulia Andreotti</title>
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS BOOTSTRAP-->
+    <link rel="stylesheet" href="bootstrap.css">
+      <link rel="stylesheet" href="style.css">
+
+    <!-- CSS AGGIUNTIVO -->
+    <!-- NB il CSS che referenzio dopo sovrascrive quello che referenzio prima
+    quindi se chiamo delle classi nello stesso modo del primo nel secondo CSS
+    le sovrascrivo solo per quegli attributi che definisco
+
+
+    <link rel="stylesheet" href="style.css">-->
+</head>
+
+
+<!---------------------------------
+BODY
+Il contenuto della pagina
+----------------------------------->
+<body>
+
+
+    <div class="container maincontainer">
+
+
+      <!---------------------------------
+      INTESTAZIONE
+      In questa sezione l'intestazione della pagina visibile; possiamo mettere uno sfondo, o regolarne la grandezza con il CSS
+      ----------------------------------->
+
+
+        <div class="jumbotron"> <!------------ qui se provate a riscrivere la classe jumbotron nel file style.css, potreste aggiungere uno sfondo per esempio-->
+            <!--
+            I miei dati
+            Qui possiamo inserire una nostra foto, il nostro nome e un titolo
+            -->
+            <div class="row intestazione">
+                <!--
+                usando il template di bootstrap, questa immagine, la nostra foto, ha i bordi ed e' responsive
+                -->
+                <div class="col-sm-6">
+                  <img class="img-thumbnail img-responsive" max-width="50" src="pic.jpg">
+                </div>
+                <div class="col-sm-6">
+                  <h1 >Giulia Andreotti</h1>
+                  <h3 >studentessa</h3>
+                  <h4>Sono una ragazza neodicottenne che vive in un piccolo paese incastrato tra lago e montagna in provicia di Lecco. Sono molto detemrinata e mi considero perfezionista. Amo stare in mezzo alla gente, parlare di qualsiasi cosa e regalare sorrisi. Tendo a trovare il buono in ogni persona e credo nell'essere umano.</h4>
+
+
+                  <br><br><br>
+
+                  <!--<p class="cta"><a class="btn btn-primary btn-lg" >Bottone! &raquo;</a></p>-->
+                </div>
+
+            </div>
+        </div>
+
+
+        <!---------------------------------
+        COLONNA: col1
+        questo e' il primo div con alcune sezioni al suo interno
+        utilizzando il nome della sua classe col1 e scrivendo CSS specifico, posso modificare la sua apparenza
+        ----------------------------------->
+
+
+
+        <div class="row">
+        <div class="col-sm-4">
+
+          <div class="container col1">
+              <!--
+              I miei contatti
+              -->
+
+              <div class="contact-container container-block">
+                  <ul class="list contact-list">
+                      <li><a href="giulia.andreotti.99@mail.com" >Mail</a></li>
+                      <li><a href="https://www.instagram.com/giulia_andreotti_/" target="_blank"  >Instagram</a></li>
+                      <li><a href="https://www.facebook.com/giulia.andreotti.144" target="_blank"  >Facebook</a></li>
+                  </ul>
+              </div>
+
+
+
+              <!--
+              I miei studi
+              -->
+
+              <div class="studi">
+                  <h2 class="section-title">Education</h2>
+
+
+                  <!-- Elemento 1-->
+                  <!-- <ul class="education">
+                      <li class="nomeed">MSc in Engineering and Management</li>
+                      <li class="doveed">Politecnico di Torino</li>
+                      <li class="descrizioneed">Parole parole parole... descrizione descrizione descrizione... io sono un testo lungo a piacere!</li> -->
+                  </ul>
+
+                  <!-- Elemento 2-->
+
+                  <ul  class="education">
+                      <li class="nomeed">Quinto anno di liceo scientifco tradizionale</li>
+                      <li class="doveed">@Istituto Superiore Lorenzo Rota, Calolziocorte (LC)</li>
+                      <li class="descrizioneed">Mi piacciono le materie scientifiche e specialmente come il loro insegnamento possa aprire la mente e faccia scoprire il mondo in modo più approfondito.</li>
+
+                  </ul>
+              </div>
+
+
+
+              <!--
+              Lingue che parlo
+              -->
+
+              <div class="lingue">
+                  <h2 class="section-title">Languages</h2>
+                  <ul class="lingueli">
+                      <li>Italiano <span class="lang-desc">(Native)</span></li>
+                      <li>Inglese <span class="lang-desc">(Professional)</span></li>
+                      <li>Francese <span class="lang-desc">(Beginner)</span></li>
+                  </ul>
+              </div>
+
+
+
+          </div>
+        </div>
+
+        <!---------------------------------
+        COLONNA: col2
+        questo e' il secondo div con alcune sezioni al suo interno
+        utilizzando il nome della sua classe col2 e scrivendo CSS specifico, posso modificare la sua apparenza
+        ----------------------------------->
+
+        <div class="col-sm-8">
+          <div class="container col2">
+
+              <section class="section summary-section">
+                  <h2 class="section-title">About me</h2>
+                  <div class="summary">
+                      <p>Sono una studentessa e frequento l'ultimo anno del liceo scinetifico tradizionale. Sono ancora molto confusa riguardo il mio futuro e le mie scelte universitarie. Ho frequentato il quarto anno di liceo in Canada, dove sono riuscita a diplomarmi. E` stata un'esperienza formativa e interessante, la quale mi ha portata ad aprire gli occhi sul mondo e su quello che ci accade attorno ogni giorno. Mi piace stare in mezzo alla natura e credo che uscire all'aria aperta sia il modo migliore per eliminare lo stress. Spesso e volentieri mi sono sentita descritta "as a personable person". Sono molto ambiziosa e determinata e mi piace organizzare per filo e per segno ogni singola cosa che io debba fare, nonostante una parte di me ami l'avventura.</p>
+                  </div>
+              </section>
+
+
+
+              <!--<section class="progetti">
+                <h2 class="section-title">Progetti</h2>
+                <div class="row">
+
+                  <div class="col-sm-4 prog1">
+                      <p>Io sono l'esempio di un progetto, qui puoi inserire immagini e descrizioni e link</p>
+                  </div>
+                  <div class="col-sm-4 prog2">
+                      <p>Io sono l'esempio di un progetto, qui puoi inserire immagini e descrizioni e link</p>
+                  </div>
+                  <div class="col-sm-4 prog3">
+                      <p>Io sono l'esempio di un progetto, qui puoi inserire immagini e descrizioni e link</p>
+                  </div>
+
+                </div>
+
+              </section>-->
+
+              <section class="passioni">
+                  <h2 class="section-title">Passioni</h2>
+
+                  <div class="row">
+                    <div class="col-sm-6 pass2">
+                      <img src="https://static1.vaucluseenprovence.com/obt_img/700x492/4645712_1.jpg" class="img-thumbnail img-responsive" max-width="300">
+                        <p></p>
+                    </div>
+                    <div class="col-sm-6 pass1">
+                        <img src="http://autofficinapaparellalino.it/wp-content/uploads/2015/03/jeep-off_road-fuoristrada.jpg" class="img-thumbnail img-responsive" max-width="200">
+                        <p> </p>
+                    </div>
+                    <div class="col-sm-6 pass3">
+                      <img src="Untitled.jpg" class="img-thumbnail img-responsive" max-width="200">
+                        <p></p>
+                    </div>
+                  </div>
+                <!--  <div class="col-sm-6 pass4">
+                    <img src="https://i0.wp.com/www.gizmosnack.com/wp-content/uploads/2017/03/musafir.jpg?resize=620%2C372" class="img-thumbnail img-responsive" max-width="300">
+                      <p></p>
+                  </div> -->
+
+
+              </section>
+
+
+          </div>
+      </div>
+    </div>
+</body>
+</html>
