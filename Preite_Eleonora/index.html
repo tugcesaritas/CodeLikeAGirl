@@ -1,0 +1,215 @@
+
+<!DOCTYPE html>
+
+<!---------------------------------
+HEAD
+le informazioni sull'intestazione della pagina
+----------------------------------->
+
+
+<head>
+    <!-- TITOLO -->
+    <title>Eleonora Preite</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS BOOTSTRAP-->
+    <link rel="stylesheet" href="bootstrap.css">
+
+    <!-- CSS AGGIUNTIVO -->
+    <!-- NB il CSS che referenzio dopo sovrascrive quello che referenzio prima
+    quindi se chiamo delle classi nello stesso modo del primo nel secondo CSS
+    le sovrascrivo solo per quegli attributi che definisco-->
+
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<!---------------------------------
+BODY
+Il contenuto della pagina
+----------------------------------->
+<body>
+
+
+    <div class="container maincontainer">
+
+
+      <!---------------------------------
+      INTESTAZIONE
+      In questa sezione l'intestazione della pagina visibile; possiamo mettere uno sfondo, o regolarne la grandezza con il CSS
+      ----------------------------------->
+
+
+        <div class="jumbotron"> <!------------ qui se provate a riscrivere la classe jumbotron nel file style.css, potreste aggiungere uno sfondo per esempio-->
+            <!--
+            I miei dati
+            Qui possiamo inserire una nostra foto, il nostro nome e un titolo
+            -->
+            <div class="row intestazione">
+                <!--
+                usando il template di bootstrap, questa immagine, la nostra foto, ha i bordi ed e' responsive
+                -->
+                <div class="col-sm-6">
+                  <img class="img-thumbnail img-responsive" max-width="50" src="https://akimg3.ask.fm/f17/8cea3/ae41/4a60/8d21/5a2b6ec3d964/normal/2955950.jpg">
+                </div>
+                <div class="col-sm-6">
+                  <h1 >Eleonora Preite</h1>
+                  <h3 >studentessa</h3>
+                  <h4>Milano, 17</h4>
+
+
+                  <br><br><br>
+
+                  <p class="cta"><a class="btn btn-primary btn-lg" href=https://www.instagram.com/crud.ele/ >Instagram &raquo;</a></p>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!---------------------------------
+        COLONNA: col1
+        questo e' il primo div con alcune sezioni al suo interno
+        utilizzando il nome della sua classe col1 e scrivendo CSS specifico, posso modificare la sua apparenza
+        ----------------------------------->
+
+
+
+        <div class="row">
+        <div class="col-sm-4">
+
+          <div class="container col1">
+              <!--
+              I miei contatti
+              -->
+
+              <div class="contact-container container-block">
+                  <ul class="list contact-list">
+                      <li><a href="mailto:eleonorapreite13@gmail.com" >mail</a></li>
+                      <li><a href="https://www.facebook.com/JosHutchWife"  >Facebook</a></li>
+                      <li><a href="https://twitter.com/eleonora_preite" target="_blank"  >@twittername</a></li>
+                  </ul>
+              </div>
+
+
+
+              <!--
+              I miei studi
+              -->
+
+              <div class="studi">
+                  <h2 class="section-title">Education</h2>
+
+
+                  <!-- Elemento 1-->
+                  <ul class="education">
+                      <li class="nomeed">Liceo Scientifico Leonardo Da Vinci</li>
+                      <li class="doveed">Music, Art, Cuisine</li>
+                      <li class="descrizioneed">Photography, Technology</li>
+                  </ul>
+
+                  <!-- Elemento 2-->
+
+                  <ul  class="education">
+                      <li class="nomeed">Obsessions</li>
+                      <li class="doveed">Sushi Lover</li>
+                      <li class="descrizioneed">MotoGP addict</li>
+
+                  </ul>
+              </div>
+
+
+
+              <!--
+              Lingue che parlo
+              -->
+
+              <div class="lingue">
+                  <h2 class="section-title">Languages</h2>
+                  <ul class="lingueli">
+                      <li>Italiano <span class="lang-desc">(Native)</span></li>
+                      <li>Inglese <span class="lang-desc">(Professional)</span></li>
+                      <li>Francese <span class="lang-desc">(Beginner)</span></li>
+                  </ul>
+              </div>
+
+
+
+          </div>
+        </div>
+
+        <!---------------------------------
+        COLONNA: col2
+        questo e' il secondo div con alcune sezioni al suo interno
+        utilizzando il nome della sua classe col2 e scrivendo CSS specifico, posso modificare la sua apparenza
+        ----------------------------------->
+
+        <div class="col-sm-8">
+          <div class="container col2">
+
+              <section class="section summary-section">
+                  <h2 class="section-title">About me</h2>
+                  <div class="summary">
+                      <p>Sono Eleonora, ho 17 anni, vivo a Milano e frequento il Liceo Scientifico. Ho diverse passioni, suonare il pianoforte e cantare, la musica, la MotoGP, la cucina e il cake design, la fotografia, l'arte e disegnare e il sushi.</p>
+                  </div>
+              </section>
+
+
+
+              <section class="progetti">
+                <h2 class="section-title">Progetti</h2>
+                <div class="row">
+
+                  <div class="col-sm-4 prog1">
+                      <p>L'anno prossimo vorrei andare a studiare Ingegneria Informatica o Gestionale al Politecnico di Milano</p>
+                  </div>
+                  <div class="col-sm-4 prog2">
+                      <p>Adoro viaggiare e vorrei visitare l'Australia e il Canada</p>
+                  </div>
+                  <div class="col-sm-4 prog3">
+                      <p>Mi piace moltissimo leggere e guardare film</p>
+                  </div>
+
+                </div>
+
+              </section>
+
+              <section class="passioni">
+                  <h2 class="section-title">Passioni</h2>
+
+                  <div class="row">
+                    <div class="col-sm-6 pass1">
+                        <img src="https://scontent.cdninstagram.com/t51.2885-15/sh0.08/e35/p640x640/21436202_1457852210968670_6239965964960530432_n.jpg" class="img-thumbnail img-responsive" max-width="200">
+                        <p>In questa foto sono al circuito di Misani col pilota di MotoGP Cal Crutchlow</p>
+                    </div>
+                    <div class="col-sm-6 pass2">
+                      <img src="https://scontent.cdninstagram.com/t51.2885-15/sh0.08/e35/p640x640/21227177_289154234825392_2025137639102873600_n.jpg" class="img-thumbnail img-responsive" max-width="200">
+                        <p>In questa foto sono con il mio amico Nicolo' che quest'anno sta facendo l'Exchange Year a Parigi</p>
+                    </div>
+                    <div class="col-sm-6 pass2">
+                      <img src="https://scontent.cdninstagram.com/t51.2885-15/s640x640/sh0.08/e35/19765254_766000733571188_7454133501344874496_n.jpg" class="img-thumbnail img-responsive" max-width="200">
+                        <p>In questa foto sono con tre dei miei migliori amici, Silvia, Giulia e Nicolo'</p>
+                    </div>
+                    <div class="col-sm-6 pass2">
+                      <img src="https://scontent.cdninstagram.com/t51.2885-15/e35/18096381_806050992882765_3031079620469325824_n.jpg" class="img-thumbnail img-responsive" max-width="200">
+                        <p>In questa foto c'e' un mio disegno di Hannah Baker, dalla serie tv 13 Reasons Why</p>
+                    </div>
+                    <div class="col-sm-6 pass2">
+                      <img src="https://scontent.cdninstagram.com/t51.2885-15/sh0.08/e35/p640x640/20633747_817313611778183_8355889510369722368_n.jpg" class="img-thumbnail img-responsive" max-width="200">
+                        <p>In questa foto sono in uno dei miei ristoranti preferito, il ristorante giappo-brasiliano Temakinho</p>
+                    </div>
+                    <div class="col-sm-6 pass2">
+                      <img src="https://scontent.cdninstagram.com/t51.2885-15/s640x640/sh0.08/e35/13721190_725496894255360_690783613_n.jpg" class="img-thumbnail img-responsive" max-width="200">
+                        <p>Questa foto l'ho scatta a Oxford, una delle citta' che ho preferito tra quelle che ho visitato fin'ora</p>
+                    </div>
+                  </div>
+              </section>
+
+
+          </div>
+      </div>
+    </div>
+</body>
+</html>
