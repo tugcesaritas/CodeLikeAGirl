@@ -1,0 +1,196 @@
+
+<!DOCTYPE html>
+
+<!---------------------------------
+HEAD
+le informazioni sull'intestazione della pagina
+----------------------------------->
+
+
+<head>
+    <!-- TITOLO -->
+    <title>CV Template</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS BOOTSTRAP-->
+    <link rel="stylesheet" href="bootstrap.css">-->
+
+    <!-- CSS AGGIUNTIVO -->
+    <!-- NB il CSS che referenzio dopo sovrascrive quello che referenzio prima
+    quindi se chiamo delle classi nello stesso modo del primo nel secondo CSS
+    le sovrascrivo solo per quegli attributi che definisco-->
+
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<!---------------------------------
+BODY
+Il contenuto della pagina
+----------------------------------->
+<body>
+
+
+    <div class="container maincontainer">
+
+
+      <!---------------------------------
+      INTESTAZIONE
+      In questa sezione l'intestazione della pagina visibile; possiamo mettere uno sfondo, o regolarne la grandezza con il CSS
+      ----------------------------------->
+
+
+        <div class="jumbotron"> <!------------ qui se provate a riscrivere la classe jumbotron nel file style.css, potreste aggiungere uno sfondo per esempio-->
+            <!--
+            I miei dati
+            Qui possiamo inserire una nostra foto, il nostro nome e un titolo
+            -->
+            <div class="row intestazione">
+                <!--
+                usando il template di bootstrap, questa immagine, la nostra foto, ha i bordi ed e' responsive
+                -->
+                <div class="col-sm-6">
+                  <img class="img-thumbnail img-responsive" max-width="300" src="https://scontent-mxp1-1.xx.fbcdn.net/v/t1.0-9/22089400_649149825472597_5583341085041218130_n.jpg?oh=29f297afc088e25f9cc16122ff8efa73&oe=5A755888">
+                </div>
+                <div class="col-sm-6">
+                  <h1 >Silvia Minissale</h1>
+                  <h3 >studentessa</h3>
+                  <h4>
+                    <ul>
+                      <li>Milan</li>
+                      <li>16</li>
+                      <li>18 agosto 2001</li>
+                    </ul>
+                  </h4>
+
+
+                  <br><br><br>
+
+                  <p class="cta"><a class="btn btn-primary btn-lg" >Bottone! &raquo;</a></p>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!---------------------------------
+        COLONNA: col1
+        questo e' il primo div con alcune sezioni al suo interno
+        utilizzando il nome della sua classe col1 e scrivendo CSS specifico, posso modificare la sua apparenza
+        ----------------------------------->
+
+
+
+        <div class="row">
+        <div class="col-sm-4">
+
+          <div class="container col1">
+              <!--
+              I miei contatti
+              -->
+
+              <div class="contact-container container-block">
+                  <ul class="list contact-list">
+                      <li><a href="mailto:silvia.minissale01@gmail.com" >silvia.minissale01@gmail.com</a></li>
+                      <li><a href="#" target="_blank"  >github</a></li>
+                      <li><a href="https://instagram.com/laminiss__" target="_blank"  >@instagram</a></li>
+                  </ul>
+              </div>
+
+
+
+              <!--
+              I miei studi
+              -->
+
+              <div class="studi">
+                  <h2 class="section-title">Education</h2>
+
+
+                  <!-- Elemento 1-->
+                  <ul class="education">
+                      <li class="nomeed">scuole medie San Girolamo Emiliani (corbetta)</li>
+                      <li class="doveed">Liceo G.B. vico (Corsico)</li>
+                  </ul>
+
+                </div>
+
+
+
+              <!--
+              Lingue che parlo
+              -->
+
+              <div class="lingue">
+                  <h2 class="section-title">Languages</h2>
+                  <ul class="lingueli">
+                      <li>Italiano <span class="lang-desc">(Native)</span></li>
+                      <li>Inglese <span class="lang-desc">(Professional)</span></li>
+                      <li>Spagnolo <span class="lang-desc">(Beginner)</span></li>
+                  </ul>
+              </div>
+
+
+
+          </div>
+        </div>
+
+        <!---------------------------------
+        COLONNA: col2
+        questo e' il secondo div con alcune sezioni al suo interno
+        utilizzando il nome della sua classe col2 e scrivendo CSS specifico, posso modificare la sua apparenza
+        ----------------------------------->
+
+        <div class="col-sm-8">
+          <div class="container col2">
+
+              <section class="section summary-section">
+                  <h2 class="section-title">About me</h2>
+                  <div class="summary">
+                      <p>Una descrizione di te, piu' lunga di quella in alto (Sono una studentessa, frequento il liceo classico e mi piace creare siti web, nel tempo libero adoro aiutare gatti randagi e andare ai concerti Heavy Metal etc).</p>
+                  </div>
+              </section>
+
+
+
+              <section class="progetti">
+                <h2 class="section-title">Progetti</h2>
+                <div class="row">
+
+                  <div class="col-sm-4 prog1">
+                      <p>Io sono l'esempio di un progetto, qui puoi inserire immagini e descrizioni e link</p>
+                  </div>
+                  <div class="col-sm-4 prog2">
+                      <p>Io sono l'esempio di un progetto, qui puoi inserire immagini e descrizioni e link</p>
+                  </div>
+                  <div class="col-sm-4 prog3">
+                      <p>Io sono l'esempio di un progetto, qui puoi inserire immagini e descrizioni e link</p>
+                  </div>
+
+                </div>
+
+              </section>
+
+              <section class="passioni">
+                  <h2 class="section-title">Passioni</h2>
+
+                  <div class="row">
+                    <div class="col-sm-12 pass1">
+                        <video width="770" height="550" controls>
+                          <source src="ballo.mp4" type="video/mp4">
+                          </video>
+                        <p>Io faccio ballo da sala da 2 anni e mezzo e dal 2018 inizio a gareggiare </p>
+                    </div>
+
+
+                  </div>
+              </section>
+
+
+          </div>
+      </div>
+    </div>
+</body>
+</html>
