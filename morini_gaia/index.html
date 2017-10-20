@@ -1,0 +1,200 @@
+
+<!DOCTYPE html>
+
+<!---------------------------------
+HEAD
+le informazioni sull'intestazione della pagina
+----------------------------------->
+
+
+<head>
+    <!-- TITOLO -->
+    <title>Gaia Morini</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS BOOTSTRAP-->
+    <link rel="stylesheet" href="bootstrap.css">
+
+    <!-- CSS AGGIUNTIVO -->
+    <!-- NB il CSS che referenzio dopo sovrascrive quello che referenzio prima
+    quindi se chiamo delle classi nello stesso modo del primo nel secondo CSS
+    le sovrascrivo solo per quegli attributi che definisco-->
+
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<!---------------------------------
+BODY
+Il contenuto della pagina
+----------------------------------->
+<body>
+
+
+    <div class="container maincontainer">
+
+
+      <!---------------------------------
+      INTESTAZIONE
+      In questa sezione l'intestazione della pagina visibile; possiamo mettere uno sfondo, o regolarne la grandezza con il CSS
+      ----------------------------------->
+
+
+        <div class="jumbotron"> <!------------ qui se provate a riscrivere la classe jumbotron nel file style.css, potreste aggiungere uno sfondo per esempio-->
+            <!--
+            I miei dati
+            Qui possiamo inserire una nostra foto, il nostro nome e un titolo
+            -->
+            <div class="row intestazione">
+                <!--
+                usando il template di bootstrap, questa immagine, la nostra foto, ha i bordi ed e' responsive
+                -->
+                <div class="col-sm-6">
+                  <img class="img-thumbnail img-responsive" max-width="300" src="https://78.media.tumblr.com/81e8dcbe781604ea1cf525b1f2cd15fb/tumblr_olmikhBg3q1r6kbzoo1_1280.jpg">
+                </div>
+                <div class="col-sm-6">
+                  <h1 >Gaia Morini</h1>
+                  <h3 >Studentessa</h3>
+                  <h4>:)</h4>
+
+
+                  <br><br><br>
+
+                  <p class="cta"><a class="btn btn-primary btn-lg" >Nel dubbio premi &raquo;</a></p>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!---------------------------------
+        COLONNA: col1
+        questo e' il primo div con alcune sezioni al suo interno
+        utilizzando il nome della sua classe col1 e scrivendo CSS specifico, posso modificare la sua apparenza
+        ----------------------------------->
+
+
+
+        <div class="row">
+        <div class="col-sm-4">
+
+          <div class="container col1">
+              <!--
+              I miei contatti
+              -->
+
+              <div class="contact-container container-block">
+                  <ul class="list contact-list">
+                      <li><a href="gaiamorini14@gmail.com" >gaiamorini14@gmail.com</a></li>
+                      <li><a href="#" target="_blank"  >github</a></li>
+                      <li><a href="https://www.instagram.com/gaiapending/?hl=it" target="_blank"  >@gaiapending</a></li>
+                  </ul>
+              </div>
+
+
+
+              <!--
+              I miei studi
+              -->
+
+              <div class="studi">
+                  <h2 class="section-title">Education</h2>
+
+
+                  <!-- Elemento 1-->
+                  <ul class="education">
+                      <li class="nomeed">Scuola Media</li>
+                      <li class="doveed">Istituto Cocchetti</li>
+                      <li class="descrizioneed">Milano</li>
+                  </ul>
+
+                  <!-- Elemento 2-->
+
+                  <ul  class="education">
+                      <li class="nomeed">Liceo Scientifico</li>
+                      <li class="doveed">Istituto Cocchetti (ovunque e da nessuna parte)</li>
+                      <li class="descrizioneed">Sempre Milano</li>
+
+                  </ul>
+              </div>
+
+
+
+              <!--
+              Lingue che parlo
+              -->
+
+              <div class="lingue">
+                  <h2 class="section-title">Languages</h2>
+                  <ul class="lingueli">
+                      <li>Italiano <span class="lang-desc"></span></li>
+                      <li>Inglese <span class="lang-desc"></span></li>
+                      <li>Spagnolo <span class="lang-desc"></span></li>
+                  </ul>
+              </div>
+
+
+
+          </div>
+        </div>
+
+        <!---------------------------------
+        COLONNA: col2
+        questo e' il secondo div con alcune sezioni al suo interno
+        utilizzando il nome della sua classe col2 e scrivendo CSS specifico, posso modificare la sua apparenza
+        ----------------------------------->
+
+        <div class="col-sm-8">
+          <div class="container col2">
+
+              <section class="section summary-section">
+                  <h2 class="section-title">About me</h2>
+                  <div class="summary">
+                      <p>Sono nata il 14 maggio 2002, a Milano. La mia passione piu' grande e' suonare la chitarra. Amo la musica, i concerti, le serie tv, Good Mythical Morning e molto altro su Youtube, i film, viaggiare ed esplorare. Studio al liceo scientifico, che e' molto duro ma appagante.</p>
+                  </div>
+              </section>
+
+
+
+              <section class="progetti">
+                <h2 class="section-title">Progetti</h2>
+                <div class="row">
+
+                  <div class="col-sm-4 prog1">
+                      <p>Finire il liceo possibilmente in 5 anni e trovare la facolta'giusta per me in universita', che vorrei frequentare a Londra</p>
+                  </div>
+                  <div class="col-sm-4 prog2">
+                      <p>Trovare il lavoro dei miei sogni che mi stimoli ogni giorno e mi motivi a vedere la giornata che sto per vivere con un occhio diverso</p>
+                  </div>
+                  <div class="col-sm-4 prog3">
+                      <p>Realizzarmi magari anche nel mondo nella musica, anche senza fare di essa necessariamente una professione</p>
+                  </div>
+
+                </div>
+
+              </section>
+
+              <section class="passioni">
+                  <h2 class="section-title">Passioni</h2>
+
+                  <div class="row">
+                    <div class="col-sm-6 pass1">
+                        <img src="https://68.media.tumblr.com/4858f848022bc13c5cc738613e7c3f8b/tumblr_nzokqyi1u11v1v25ho1_500.jpg" class="img-thumbnail img-responsive" max-width="200">
+                        <p>Suonare la chitarra: una fonte di sfogo, divertimento e tutte le emozioni possibili e immaginabili</p>
+                    </div>
+                    <div class="col-sm-6 pass2">
+                      <img src="http://i1.irishmirror.ie/incoming/article8040871.ece/ALTERNATES/s615b/Oasis.jpg" class="img-thumbnail img-responsive" max-width="200">
+                        <p>gente che fa musica (esempio a caso: OASIS)[ma anche blink 182, bowling for soup, green day, the beatles, bluvertigo, le vibrazioni,beady eye, nghfb, coldplay e moooolti altri...]</p>
+                    </div>
+
+                  </div>
+              </section>
+
+
+          </div>
+      </div>
+    </div>
+</body>
+</html>

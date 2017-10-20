@@ -1,0 +1,69 @@
+/**************
+Qui modifico tutto il body del mio html
+**************/
+
+body{
+  background-color:#CD0000;
+}
+
+
+/**************
+Qui vado a definire il contenirore del mio contenuto
+**************/
+
+.maincontainer{
+  background-color: #91C4AF;
+  color: inherit;
+}
+
+
+
+/**************
+intestazione
+**************/
+
+.jumbotron{ /*se volessi modificare lo sfondo della parte alta della pagina, dovrei scrivere qui*/
+  background-color:; 
+
+}
+
+.intestazione h1{
+  font-size:30pt;
+  font-weight:bold;
+  font-family: georgia;
+  color: #C0392B;
+}
+
+
+.intestazione h3{
+  font-size:20pt;
+  font-style:italic;
+  font-family: georgia;
+}
+
+.intestazione h4{
+  font-size:10pt;
+}
+
+.intestazione .cta{
+  color:black;
+  padding-bottom:10pt;
+}
+
+/****************
+sezione educazione
+**********/
+
+
+.education{
+  list-style-type: none;
+  font-family: courier;
+}
+
+.nomeed{
+  font-weight: bold;
+}
+
+.doveed{
+  font-style: italic;
+}
