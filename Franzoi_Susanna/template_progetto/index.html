@@ -1,0 +1,198 @@
+
+<!DOCTYPE html>
+
+<!---------------------------------
+HEAD
+le informazioni sull'intestazione della pagina
+----------------------------------->
+
+
+<head>
+    <!-- TITOLO -->
+    <title>Susanna Franzoi</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS BOOTSTRAP-->
+    <link rel="stylesheet" href="bootstrap.css">
+
+    <!-- CSS AGGIUNTIVO -->
+    <!-- NB il CSS che referenzio dopo sovrascrive quello che referenzio prima
+    quindi se chiamo delle classi nello stesso modo del primo nel secondo CSS
+    le sovrascrivo solo per quegli attributi che definisco-->
+
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<!---------------------------------
+BODY
+Il contenuto della pagina
+----------------------------------->
+<body>
+
+
+    <div class="container maincontainer">
+
+
+      <!---------------------------------
+      INTESTAZIONE
+      In questa sezione l'intestazione della pagina visibile; possiamo mettere uno sfondo, o regolarne la grandezza con il CSS
+      ----------------------------------->
+
+
+        <div class="jumbotron"> <!------------ qui se provate a riscrivere la classe jumbotron nel file style.css, potreste aggiungere uno sfondo per esempio-->
+            <!--
+            I miei dati
+            Qui possiamo inserire una nostra foto, il nostro nome e un titolo
+            -->
+            <div class="row intestazione">
+                <!--
+                usando il template di bootstrap, questa immagine, la nostra foto, ha i bordi ed e' responsive
+                -->
+                <div class="col-sm-6">
+                  <img class="img-thumbnail img-responsive" max-width="300" src="http://www.rrphoto.eu/images/folio/ireland2/ph_26.jpg">
+                </div>
+                <div class="col-sm-6">
+                  <h1 id="nome">Susanna Franzoi</h1>
+                  <h3 id="sottonome">Studentessa</h3>
+                  <h4 id="puntini">... </h4>
+
+
+                  <br><br><br>
+
+                  <p class="cta"><a class="btn btn-primary btn-lg" id="bottone">click here &raquo;</a></p>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!---------------------------------
+        COLONNA: col1
+        questo e' il primo div con alcune sezioni al suo interno
+        utilizzando il nome della sua classe col1 e scrivendo CSS specifico, posso modificare la sua apparenza
+        ----------------------------------->
+
+
+
+        <div class="row">
+        <div class="col-sm-4">
+
+          <div class="container col1">
+              <!--
+              I miei contatti
+              -->
+
+              <div class="contact-container container-block">
+                  <ul class="list contact-list">
+                      <li><a href="mailto:susanna.franzoi02@gmail.com" >La mia mail</a></li>
+
+                  </ul>
+              </div>
+
+
+
+              <!--
+              I miei studi
+              -->
+
+              <div class="studi">
+                  <h2 class="section-title" id="education">Education</h2>
+
+
+                  <!-- Elemento 1-->
+                  <ol class="education">
+                      <li class="nomeed">Scuola elementare Sant'Angela Merici</li>
+                      <li class="doveed">Scuola secondaria di primo grado Sant'Angela Merici</li>
+                      <li class="descrizioneed">Liceo scientifico Vittorio Veneto</li>
+                  </ol>
+
+                  <!-- Elemento 2-->
+
+                  <ol  class="education">
+
+                      <li>Certificazioni di lingua, corso ECDL, partecipazione a diverse iniziative scolastiche quali Giochi Matematici PRISTEM e giochi delle Scienze Sperimentali.</li>
+
+                  </ol>
+              </div>
+
+
+
+              <!--
+              Lingue che parlo
+              -->
+
+              <div class="lingue">
+                  <h2 class="section-title" id="lingue">Languages</h2>
+                  <ul class="lingueli">
+                      <li>Italiano <span class="lang-desc">(Native)</span></li>
+                      <li>Inglese <span class="lang-desc">(Professional)</span></li>
+                      <li>Spagnolo <span class="lang-desc">(Beginner)</span></li>
+                  </ul>
+              </div>
+
+
+
+          </div>
+        </div>
+
+        <!---------------------------------
+        COLONNA: col2
+        questo e' il secondo div con alcune sezioni al suo interno
+        utilizzando il nome della sua classe col2 e scrivendo CSS specifico, posso modificare la sua apparenza
+        ----------------------------------->
+
+        <div class="col-sm-8">
+          <div class="container col2">
+
+              <section class="section summary-section">
+                  <h2 class="section-title" id="me">About me</h2>
+                  <div class="summary">
+                      <p>Sono una studentessa, nata il 28/08/2002 a Borgosesia, frequento il liceo scientifico Vittorio Veneto e amo fare passeggiate in montagna, nel tempo libero adoro leggere (specialmente romanzi gialli e d'avventura), praticare attività sportive( tennis e kick-boxing) e tenermi aggiornata su ciò che accade nel resto del mondo(tramite siti inernet e giornali).</p>
+                  </div>
+              </section>
+
+
+
+              <section class="progetti">
+                <h2 class="section-title" id="progetti">Progetti</h2>
+                <div class="row">
+
+                  <div class="col-sm-4 prog1">
+                      <p>Il mio progetto primario sarebbe quello di utilizzare gli anni del liceo per compiere il maggior numero di esperienze possibile, ampliando le mie conoscenze in ogni campo e in modo da avere la mente aperta ad ogni opportunità che mi possa presentare il futuro.</p>
+                  </div>
+                  <div class="col-sm-4 prog2">
+                      <p>Desidero viaggiare il mondo in ogni suo angolo avvicinandomi ad ogni cultura e civiltà possibile.</p>
+                  </div>
+                  <div class="col-sm-4 prog3">
+                      <p>Da un punto di vista scolastico vorrei frequentare un' università all'estero.</p>
+                  </div>
+
+                </div>
+
+              </section>
+
+              <section class="passioni">
+                  <h2 class="section-title" id="passioni">Passioni</h2>
+
+                  <div class="row">
+                    <div class="col-sm-6 pass1">
+                        <img src="https://i.guim.co.uk/img/media/9b1541a0c7c36569e79469a64a2b5d4f9ded5f82/659_55_3008_2667/master/3008.jpg?w=300&q=55&auto=format&usm=12&fit=max&s=b021ab5d6e5901b1cc122e1e09ecf2a4" class="img-thumbnail img-responsive" max-width="200">
+                        <p>La mia più grande passione è sempre stato il tennis. In particolare ho sempre preso come figura di riferimento il campione Roger Federer, perchè ammiro la sua determinzione, la sua forza di volontà e la sua dedizione unite alla passione per ciò che pratica.</p>
+                    </div>
+                    <div class="col-sm-6 pass2">
+                      <img src="https://img.grouponcdn.com/deal/8tqfk6ust6pqLuStoRxH/4m-2048x1228/v1/c700x420.jpg" class="img-thumbnail img-responsive" max-width="200">
+                        <p>Da poco mi sono avvicinata al mondo della lotta libera.La considero una disciplina che unisce l'esercizio fisico all'equilibrio mentale e per questo intendo crescere anche in questo ambito. </p>
+                    </div>
+
+                  </div>
+              </section>
+
+
+          </div>
+      </div>
+    </div>
+</body>
+</html>

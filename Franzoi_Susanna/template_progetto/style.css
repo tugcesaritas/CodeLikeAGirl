@@ -1,0 +1,96 @@
+/**************
+Qui modifico tutto il body del mio html
+**************/
+
+body{
+  background-color:#white;
+}
+
+
+/**************
+Qui vado a definire il contenirore del mio contenuto
+**************/
+
+.maincontainer{
+  background-color:#ffe6ff;
+  color: inherit;
+}
+
+
+
+/**************
+intestazione
+**************/
+
+.jumbotron{
+  background-color: #ff99ff
+
+}
+
+.intestazione h1{
+  font-size:30pt;
+  font-weight:bold;
+  font-family: georgia;
+}
+#bottone{
+  color:#white;
+}
+
+.intestazione h3{
+  font-size:20pt;
+  font-style:italic;
+}
+
+.intestazione h4{
+  font-size:10pt;
+}
+
+.intestazione .cta{
+  color:#ffffff;
+  padding-bottom:10pt;
+}
+
+/****************
+sezione educazione
+**********/
+
+
+.education{
+  list-style-type: none;
+}
+
+.nomeed{
+  font-weight:normal;
+}
+
+.doveed{
+  font-style: normal;
+}
+#nome{
+  color:purple;
+  font-style: normal;
+}
+#sottonome{
+  color:#ff3385
+}
+#puntini{
+  color:#ff4da6
+}
+#education{
+  color:#0052cc
+}
+#lingue{
+color:#ff751a
+}
+#progetti{
+ color:#ff3385
+}
+#passioni{
+  color:#1aff1a
+}
+#me{
+  color:#e60000
+}
+.btn{
+  background-color: #b3003b
+}
