@@ -1,0 +1,215 @@
+
+<!DOCTYPE html>
+
+<!---------------------------------
+HEAD
+le informazioni sull'intestazione della pagina
+----------------------------------->
+
+
+<head>
+    <!-- TITOLO -->
+    <title>Linda Sebastiani</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS BOOTSTRAP-->
+    <link rel="stylesheet" href="bootstrap.css">
+
+    <!-- CSS AGGIUNTIVO -->
+    <!-- NB il CSS che referenzio dopo sovrascrive quello che referenzio prima
+    quindi se chiamo delle classi nello stesso modo del primo nel secondo CSS
+    le sovrascrivo solo per quegli attributi che definisco-->
+
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<!---------------------------------
+BODY
+Il contenuto della pagina
+----------------------------------->
+<body>
+
+
+    <div class="container maincontainer">
+
+
+      <!---------------------------------
+      INTESTAZIONE
+      In questa sezione l'intestazione della pagina visibile; possiamo mettere uno sfondo, o regolarne la grandezza con il CSS
+      ----------------------------------->
+
+
+        <div class="jumbotron"> <!------------ qui se provate a riscrivere la classe jumbotron nel file style.css, potreste aggiungere uno sfondo per esempio-->
+            <!--
+            I miei dati
+            Qui possiamo inserire una nostra foto, il nostro nome e un titolo
+            -->
+            <div class="row intestazione">
+                <!--
+                usando il template di bootstrap, questa immagine, la nostra foto, ha i bordi ed e' responsive
+                -->
+                <div class="col-sm-6">
+                  <img class="img-thumbnail img-responsive" max-width="300" src="https://scontent.cdninstagram.com/t51.2885-15/s640x640/sh0.08/e35/20184550_1927460630833813_2334907993503563776_n.jpg">
+                </div>
+                <div class="col-sm-6">
+                  <h1 >Linda Sebastiani</h1>
+                  <h3 >Ad maiora</h3>
+                  <h4>Sono Linda, ho 18 anni, vivo a Milano e amo la mia citta'.</h4>
+
+
+                  <br><br><br>
+
+                  <p class="cta"><a class="btn btn-primary btn-lg"
+          <a href="https://www.instagram.com/linda_gaggero/">Questa sono io! &raquo;</a></p>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!---------------------------------
+        COLONNA: col1
+        questo e' il primo div con alcune sezioni al suo interno
+        utilizzando il nome della sua classe col1 e scrivendo CSS specifico, posso modificare la sua apparenza
+        ----------------------------------->
+
+
+
+        <div class="row">
+        <div class="col-sm-4">
+
+          <div class="container col1">
+              <!--
+              I miei contatti
+              -->
+
+              <div class="contact-container container-block">
+                  <ul class="list contact-list">
+                      <li><a href="linda@askus.it" >linda@askus.it</a></li>
+                      <li><a href="#" target="_blank"  >github</a></li>
+                      <li><a href="https://it-it.facebook.com/" target="_blank"  >Facebook</a></li>
+                  </ul>
+              </div>
+
+
+
+              <!--
+              I miei studi
+              -->
+
+              <div class="studi">
+                  <h2 class="section-title">I miei studi</h2>
+
+
+                  <!-- Elemento 1-->
+                  <ul class="education">
+                      <li class="nomeed">Facolta' di Giurisprudenza</li>
+                      <li class="doveed">Statale di Milano</li>
+                      <li class="descrizioneed">Sono al primo anno di giurisprudenza, mi sto appassionando giorno dopo giorno al diritto. Ho trovato delle amiche fantastiche con le quali mi trovo davvero bene!</li>
+                  </ul>
+
+                  <!-- Elemento 2-->
+
+                  <ul  class="education">
+                      <li class="nomeed">Diploma di Maturita' Linguistica</li>
+                      <li class="doveed">Liceo Istituto Maria Consolatrice, Milano</li>
+                      <li class="descrizioneed"> Zertifikat B2 e Dele B2</li>
+
+
+                  </ul>
+              </div>
+
+
+
+              <!--
+              Lingue che parlo
+              -->
+
+              <div class="lingue">
+                  <h2 id="point"class="section-title">Sono una chiacchierona</h2>
+                  <ul class="lingueli">
+                      <li>Italiano </li>
+                      <li>Inglese </li>
+                      <li>Spagnolo </li>
+                      <li> Tedesco </li>
+                  </ul>
+              </div>
+
+
+
+          </div>
+        </div>
+
+        <!---------------------------------
+        COLONNA: col2
+        questo e' il secondo div con alcune sezioni al suo interno
+        utilizzando il nome della sua classe col2 e scrivendo CSS specifico, posso modificare la sua apparenza
+        ----------------------------------->
+
+        <div class="col-sm-8">
+          <div class="container col2">
+
+              <section class="section summary-section">
+                  <h2 id="prj"class="section-title">Eccomi</h2>
+                  <div class="summary">
+                      <p>Sono Linda, ho 18 anni tra pochi giorni ne faccio 19, adoro festeggiare il mio compleanno quasi quanto adoro il Natale. Sono figlia unica ma ho un cane bellissimo che si chiama Marley. Vivo a Milano, vado a cavallo da 12 anni e amo viaggiare. I miei nonni sono pugliesi e il cibo e' la nostra religione.Quando inizio a parlare non smetto piu'! .</p>
+                  </div>
+              </section>
+
+
+
+              <section class="progetti">
+                <h2 id="prj"class="section-title">I miei progetti</h2>
+                <div id="progetti" class="row">
+
+                  <div class="col-sm-4 prog1">
+                      <p>Vorrei fare un viaggio in Giappone per conoscere una cultura totalmente differente dalla mia.</p>
+                  </div>
+                  <div class="col-sm-4 prog2">
+                      <p>Sto studiando giurisprudenza per diventare notaio.</p>
+
+
+                </div>
+
+              </section>
+
+              <section class="passioni">
+                  <h2 id="prj"class="section-title">Le mie passioni</h2>
+
+                  <div class="row">
+                    <div class="col-sm-6 pass1">
+                        <img src="https://scontent.cdninstagram.com/t51.2885-15/sh0.08/e35/p640x640/22580645_285984361913561_7560665260269502464_n.jpg" class="img-thumbnail img-responsive" max-width="200">
+                        <p>Amo passare del tempo con la mia famiglia.</p>
+                    </div>
+                    <div class="col-sm-6 pass2">
+                      <img src="https://scontent.cdninstagram.com/t51.2885-15/s640x640/sh0.08/e35/18809403_1439053319520758_9034135365476155392_n.jpg" class="img-thumbnail img-responsive" max-width="200">
+                        <p>Il mio ultimo giorno di liceo con le mie migliori amiche.</p>
+                    </div>
+                    <div class="col-sm-6 pass2">
+                      <img src="https://scontent.cdninstagram.com/t51.2885-15/sh0.08/e35/p640x640/18645193_1734037163289564_4815816966373638144_n.jpg" class="img-thumbnail img-responsive" max-width="200">
+                        <p>Sono fidanzata da 4 anni con Mattia. </p>
+                    </div>
+                    <div class="col-sm-6 pass2">
+                      <img src="https://scontent.cdninstagram.com/t51.2885-15/s640x640/sh0.08/e35/12298941_185927898420704_211959737_n.jpg" class="img-thumbnail img-responsive" max-width="200">
+                        <p>Vado a cavallo da 12 anni ed e' una delle mie piu' grandi passioni.</p>
+                    </div>
+                    <div class="col-sm-6 pass2">
+                      <img src="https://scontent.cdninstagram.com/t51.2885-15/e15/925581_468886119922556_1406824740_n.jpg" class="img-thumbnail img-responsive" max-width="200">
+                        <p>Mi piace avere del tempo per me, rilassarmi e leggere un bel libro o ascoltare musica.</p>
+                    </div>
+                    <div class="col-sm-6 pass2">
+                      <img src="https://scontent.cdninstagram.com/t51.2885-15/sh0.08/e35/p640x640/21373265_516775778676089_2221488322511896576_n.jpg" class="img-thumbnail img-responsive" max-width="200">
+                        <p>Adoro viaggiare, conoscere nuove persone e vedere sempre posti nuovi.</p>
+                    </div>
+                  </div>
+              </section>
+
+
+          </div>
+      </div>
+    </div>
+</body>
+</html>
