@@ -1,0 +1,230 @@
+
+<!DOCTYPE html>
+
+<!---------------------------------
+HEAD
+le informazioni sull'intestazione della pagina
+----------------------------------->
+
+
+<head>
+    <!-- TITOLO -->
+    <title>CV Template</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS BOOTSTRAP-->
+    <link rel="stylesheet" href="bootstrap.css">
+
+    <!-- CSS AGGIUNTIVO -->
+    <!-- NB il CSS che referenzio dopo sovrascrive quello che referenzio prima
+    quindi se chiamo delle classi nello stesso modo del primo nel secondo CSS
+    le sovrascrivo solo per quegli attributi che definisco-->
+
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<!---------------------------------
+BODY
+Il contenuto della pagina
+----------------------------------->
+<body>
+
+
+    <div class="container maincontainer">
+
+
+      <!---------------------------------
+      INTESTAZIONE
+      In questa sezione l'intestazione della pagina visibile; possiamo mettere uno sfondo, o regolarne la grandezza con il CSS
+      ----------------------------------->
+
+
+        <div class="jumbotron"> <!------------ qui se provate a riscrivere la classe jumbotron nel file style.css, potreste aggiungere uno sfondo per esempio-->
+            <!--
+            I miei dati
+            Qui possiamo inserire una nostra foto, il nostro nome e un titolo
+            -->
+            <div class="row intestazione">
+                <!--
+                usando il template di bootstrap, questa immagine, la nostra foto, ha i bordi ed e' responsive
+                -->
+                <div class="col-sm-6">
+                  <img class="img-thumbnail-img-responsive"  src="me.jpg" style="border-radius:20%">
+                </div>
+                <div class="col-sm-6">
+                  <h1 >Angelica Delle Rose</h1>
+                  <h3 >studentessa</h3>
+                  <h4>Una breve descrizione di me stessa</h4>
+
+
+                  <br><br><br>
+
+
+
+
+
+                </div>
+
+            </div>
+        </div>
+
+
+        <!---------------------------------
+        COLONNA: col1
+        questo e' il primo div con alcune sezioni al suo interno
+        utilizzando il nome della sua classe col1 e scrivendo CSS specifico, posso modificare la sua apparenza
+        ----------------------------------->
+
+    <!--    <div class="contact-container container-block">
+            <ul class="list contact-list">
+                <li><a href="https://translate.google.it/?hl=it" target="_blank">Facebook</a>
+                <li><a href="https://translate.google.it/?hl=it" target="_blank">instagram</a>
+                <li><a href="mailto:angelica.dellerose99@gmail.com" target="_top">Send Mail</a>
+            </ul>
+        </div> --->
+
+        <div class="row">
+        <div class="col-sm-4">
+
+          <div class="container col1">
+              <!--
+              I miei contatti
+              -->
+
+
+
+
+
+              <!--
+              I miei studi
+              -->
+
+              <div class="studi">
+                  <h2 class="section-title">Education</h2>
+
+
+                  <!-- Elemento 1-->
+                  <ul class="education">
+                      <li class="nomeed">Matematica</li>
+                      <li class="doveed">Bicocca, Milano</li>
+                      <li class="descrizioneed">Parole parole parole... descrizione descrizione descrizione... io sono un testo lungo a piacere!</li>
+                  </ul>
+
+                  <!-- Elemento 2-->
+
+                  <ul  class="education">
+                      <li class="nomeed">Diploma di Maturita' Informatico & Telecomunicazioni</li>
+                      <li class="doveed">IISS A. Greppi, Monticello</li>
+                      <li class="descrizioneed">Parole parole parole... descrizione descrizione descrizione... io sono un testo lungo a piacere!</li>
+
+                  </ul>
+              </div>
+
+
+
+              <!--
+              Lingue che parlo
+              -->
+
+              <div class="lingue">
+                  <h2 class="section-title">Languages</h2>
+                  <ul class="lingueli">
+                      <li>Italiano <span class="lang-desc">(Native)</span></li>
+                      <li>Inglese <span class="lang-desc">(Professional)</span></li>
+
+                  </ul>
+              </div>
+
+              <div class="contact-container container-block">
+                <h2 class="section-title">Contact</h2>
+                  <ul class="list contact-list">
+                      <li><a href="https://www.facebook.com/" target="_blank">Facebook: Angelica Delle Rose</a>
+                      <li><a href="https://www.instagram.com/accounts/login/?hl=it" target="_blank">Instagram: angydellerose</a>
+                      <li><a href="mailto:angelica.dellerose99@gmail.com" target="_top">Send Mail</a>
+                  </ul>
+              </div>
+
+
+          </div>
+        </div>
+
+        <!---------------------------------
+        COLONNA: col2
+        questo e' il secondo div con alcune sezioni al suo interno
+        utilizzando il nome della sua classe col2 e scrivendo CSS specifico, posso modificare la sua apparenza
+        ----------------------------------->
+
+        <div class="col-sm-8">
+          <div class="container col2">
+
+              <section class="section summary-section">
+                  <h2 class="section-title">About me</h2>
+                  <div class="summary">
+                      <p>Una descrizione di te, piu' lunga di quella in alto (Sono una studentessa, frequento il liceo classico e mi piace creare siti web, nel tempo libero adoro aiutare gatti randagi e andare ai concerti Heavy Metal etc).</p>
+                  </div>
+              </section>
+
+
+
+              <section class="progetti">
+                <h2 class="section-title">Progetti</h2>
+                <div class="row">
+
+                  <div class="col-sm-4 prog1">
+                    <h5>Cisco Networking Academy</h5>
+
+                      <img src="https://static.seekingalpha.com/uploads/2017/6/11/saupload_maxresdefault.jpg" class="img-thumbnail img-responsive" width="300" max-height="30">
+                      <br>
+                      <p>Io sono l'esempio di un progetto, qui puoi inserire immagini e descrizioni e link</p>
+                  </div>
+                  <div class="col-sm-4 prog2">
+                    <h5>Code like a girl</h5>
+                    <br>
+                      <img src="https://ih1.redbubble.net/image.356949646.0778/st%2Csmall%2C215x235-pad%2C210x230%2Cf8f8f8.lite-1u1.jpg" class="img-thumbnail img-responsive" width="150" height="150">
+                      <p>Io sono l'esempio di un progetto, qui puoi inserire immagini e descrizioni e link</p>
+                  </div>
+                 <div class="col-sm-4 prog2">
+                  <h5>Royal Academy of Dance</h5>
+                    <img src="https://www.raditaly.it/images/logo_rad_retina.png" class="img-thumbnail img-responsive" width="300" height="300">
+                    <br>
+                    <p>Io sono l'esempio di un progetto, qui puoi inserire immagini e descrizioni e link</p>
+                  </div>
+
+                </div>
+
+              </section>
+
+              <section class="passioni">
+                  <h2 class="section-title">Passioni</h2>
+
+                  <div class="row">
+                    <div class="col-sm-4 pass1">
+                        <img src="http://www.artea.tn.it/wp-content/uploads/2017/09/CLASSICA-246x300.jpg" class="img-thumbnail img-responsive" width="150" height="150">
+                        <p>Io sono l'esempio di una passione, qui puoi inserire immagini e descrizioni e link</p>
+                    </div>
+                    <div class="col-sm-4 pass2">
+                      <img src="http://www.zoomsud.it/images/stories/cartella_img/img38/leggere.jpg" class="img-thumbnail img-responsive" width="300" height="300">
+                        <p>Io sono l'esempio di una passione, qui puoi inserire immagini e descrizioni e link</p>
+                    </div>
+                    <div class="col-sm-4 pass2">
+                      <img src="http://www.teleaesse.it/wp-content/uploads/bfi_thumb/wwf-6dbrzkay3lcpuxmlw4fvc43qrpdv4bbvf3lt5p52n6j.jpg" class="img-thumbnail img-responsive" width="300" height="300">
+                        <p>Io sono l'esempio di una passione, qui puoi inserire immagini e descrizioni e link</p>
+
+                        <button onclick="window.location.href='https://sostieni.wwf.it/dona-ora.html'"  type="button" class="button" target="_blank" >Dona ora</button>
+
+                    </div>
+
+
+
+                  </div>
+              </section>
+
+
+          </div>
+      </div>
+    </div>
+</body>
+</html>
