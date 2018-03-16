@@ -24,7 +24,7 @@ intestazione
 **************/
 
 .jumbotron{ /*se volessi modificare lo sfondo della parte alta della pagina, dovrei scrivere qui*/
-
+background-color:#cce6ff;
 
 }
 
@@ -71,4 +71,23 @@ img-thumbnail-img-responsive{
 
 ul {
   color:#0000cc;
+}
+
+h1{
+  color: #0000cc;
+}
+h3{
+  color:#0000cc;
+}
+h4{
+  color:#0000cc;
+}
+h5{
+  color:#0000cc;
+}
+h2{
+  color:#0000cc;
+}
+p {
+  color:#000066;
 }
