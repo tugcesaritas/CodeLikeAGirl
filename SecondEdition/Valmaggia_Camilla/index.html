@@ -1,0 +1,176 @@
+
+<!DOCTYPE html>
+
+<!---------------------------------
+HEAD
+le informazioni sull'intestazione della pagina
+----------------------------------->
+
+
+<head>
+    <!-- TITOLO -->
+    <title> CV Template </title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS BOOTSTRAP-->
+    <link rel="stylesheet" href="bootstrap.css">
+
+    <!-- CSS AGGIUNTIVO -->
+    <!-- NB il CSS che referenzio dopo sovrascrive quello che referenzio prima
+    quindi se chiamo delle classi nello stesso modo del primo nel secondo CSS
+    le sovrascrivo solo per quegli attributi che definisco-->
+
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<!---------------------------------
+BODY
+Il contenuto della pagina
+----------------------------------->
+<body>
+
+
+    <div class="container maincontainer">
+
+
+      <!---------------------------------
+      INTESTAZIONE
+      In questa sezione l'intestazione della pagina visibile; possiamo mettere uno sfondo, o regolarne la grandezza con il CSS
+      ----------------------------------->
+
+
+        <div class="jumbotron"> <!------------ qui se provate a riscrivere la classe jumbotron nel file style.css, potreste aggiungere uno sfondo per esempio-->
+            <!--
+            I miei dati
+            Qui possiamo inserire una nostra foto, il nostro nome e un titolo
+            -->
+            <div class="row intestazione">
+                <!--
+                usando il template di bootstrap, questa immagine, la nostra foto, ha i bordi ed e' responsive
+                -->
+                <div class="col-sm-6">
+                  <img class="img-thumbnail-img-responsive"  src="profilo.jpg" style="border-radius:20%">
+                </div>
+                <div class="col-sm-6">
+                  <h1> Camilla Valmaggia </h1>
+                  <h3> Studentessa, 15 </h3>
+
+
+                  <br><br><br>
+
+                  <p class="cta"><a href="http://www.instagram.com/camilla.valmaggia" class="btn btn-primary btn-lg">Il mio profilo Instagram! &raquo;</a></p>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!---------------------------------
+        COLONNA: col1
+        questo e' il primo div con alcune sezioni al suo interno
+        utilizzando il nome della sua classe col1 e scrivendo CSS specifico, posso modificare la sua apparenza
+        ----------------------------------->
+
+
+
+        <div class="row">
+        <div class="col-sm-4">
+
+          <div class="container col1">
+              <!--
+              I miei contatti
+              -->
+
+              <div class="contact-container container-block">
+                  <ul class="list contact-list">
+                      <li><a href="mailto:camilla.valmaggia@gmail.com"> camilla.valmaggia@gmail.com</a></li>
+                    </ul>
+              </div>
+
+
+
+              <!--
+              I miei studi
+              -->
+
+              <div class="studi">
+                  <h2 class="section-title">Education</h2>
+
+
+                  <!-- Elemento 1-->
+                  <ul class="education">
+                      <li class="nomeed">LIceo delle Scienze Applicate </li>
+                      <li class="doveed"> IIS L. Cobianchi di Intra (VB) </li>
+                      <li class="descrizioneed">Sito della mia scuola: <a href="https://www.cobianchi.it">www.cobianchi.it</a></li>
+                  </ul>
+
+                  <!-- Elemento 2-->
+              </div>
+
+
+
+              <!--
+              Lingue che parlo
+              -->
+
+              <div class="lingue">
+                  <h2 class="section-title">Languages</h2>
+                  <ul class="lingueli">
+                      <li>Italiano <span class="lang-desc">(Native)</span></li>
+                      <li>Inglese <span class="lang-desc">(Professional)</span></li>
+                  </ul>
+              </div>
+
+
+
+          </div>
+        </div>
+
+
+        <!---------------------------------
+        COLONNA: col2
+        questo e' il secondo div con alcune sezioni al suo interno
+        utilizzando il nome della sua classe col2 e scrivendo CSS specifico, posso modificare la sua apparenza
+        ----------------------------------->
+
+        <div class="col-sm-8">
+          <div class="container col2">
+
+              <section class="section summary-section">
+                  <h2 class="section-title">About me</h2>
+                  <div class="summary">
+                    <p>Mi chiamo Camilla, ho 15 anni e abito in un piccolo paesino della Lombardia, sul Lago Maggiore. </p>
+                  </div>
+              </section>
+
+
+              <section class="progetti">
+                <h2 class="section-title"> Scuola</h2>
+              </p> Frequento il liceo scientifico opzione scienze applicate e mi piace molto. Da circa un mese vado a scuola a Intra (o Verbania), in Piemonte, mentre prima andavo a Laveno, piu' vicino a casa mia. I miei professori sono fantastici e facciamo moltissime cose. Le mie materie preferite sono quelle scientifiche, quindi matematica, chimica, fisica, biologia e informatica.</p>
+                          </section>
+
+              <section class="passioni">
+                  <h2 class="section-title">Le mie passioni</h2>
+
+                  <div class="row">
+                    <div class="col-sm-6 pass1">
+                        <img src="ginnastica.jpg">
+                        <p>Pratico ginnastica artistca e, anche se sono ferma da nove mesi per via di alcuni infortuni, resta comunque la mia passione piu' grande. </p>
+                    </div>
+                    <div class="col-sm-6 pass2">
+                      <img src="medicina.jpg">
+                        <p>Sono appassionata di medicina e nel mio tempo libero faccio ricerche riguardo malattie rare. </p>
+                    </div>
+
+                  </div>
+              </section>
+
+
+          </div>
+      </div>
+    </div>
+</body>
+</html>
