@@ -1,0 +1,196 @@
+
+<!DOCTYPE html>
+<html>
+<!---------------------------------
+HEAD
+le informazioni sull'intestazione della pagina
+----------------------------------->
+
+
+<head>
+    <!-- TITOLO -->
+    <title>CV Template</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS BOOTSTRAP-->
+    <link rel="stylesheet" href="bootstrap.css">
+
+    <!-- CSS AGGIUNTIVO -->
+    <!-- NB il CSS che referenzio dopo sovrascrive quello che referenzio prima
+    quindi se chiamo delle classi nello stesso modo del primo nel secondo CSS
+    le sovrascrivo solo per quegli attributi che definisco-->
+
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<!---------------------------------
+BODY
+Il contenuto della pagina
+----------------------------------->
+<body>
+
+
+    <div class="container maincontainer">
+
+
+      <!---------------------------------
+      INTESTAZIONE
+      In questa sezione l'intestazione della pagina visibile; possiamo mettere uno sfondo, o regolarne la grandezza con il CSS
+      ----------------------------------->
+
+
+        <div class="jumbotron"> <!------------ qui se provate a riscrivere la classe jumbotron nel file style.css, potreste aggiungere uno sfondo per esempio-->
+            <!--
+            I miei dati
+            Qui possiamo inserire una nostra foto, il nostro nome e un titolo
+            -->
+            <div class="row intestazione">
+                <!--
+                usando il template di bootstrap, questa immagine, la nostra foto, ha i bordi ed e' responsive
+                -->
+                <div class="col-sm-6">
+                  <img class="img-fluid" src="unnamed.jpg" style="border-radius:20%">
+                </div>
+                <div class="col-sm-6">
+                  <h1 > Giulia Guidetti</h1>
+                  <h3 >Studentessa</h3>
+                  <h4> MIlano </h4>
+
+
+                  <br><br><br>
+
+
+                </div>
+
+            </div>
+        </div>
+
+
+        <!---------------------------------
+        COLONNA: col1
+        questo e' il primo div con alcune sezioni al suo interno
+        utilizzando il nome della sua classe col1 e scrivendo CSS specifico, posso modificare la sua apparenza
+        ----------------------------------->
+
+
+
+        <div class="row">
+        <div class="col-sm-4">
+
+          <div class="container col1">
+              <!--
+              I miei contatti
+              -->
+
+              <div class="contact-container container-block">
+                  <ul class="list contact-list">
+                      <li><a href="mailto:giulia.guidetti.00@gmail.com" >gmail</a></li>
+                      <li><a href="https://www.instagram.com/guidetti_giulia/"> Giulia Guidetti Instagram</a></li>
+
+                  </ul>
+              </div>
+
+
+
+              <!--
+              I miei studi
+              -->
+
+              <div class="studi">
+                  <h2 class="section-title">My Studies</h2>
+
+
+                  <!-- Elemento 1-->
+                  <ul class="education">
+                      <li class="nomeed"> Liceo Scientifico statale A. Tosi</li
+                      <li class="descrizioneed">Mi piacciono molto le materie scientifiche e, dopo il liceo, sarei interessata a studiare la facoltra' di ingegneria gestionale/matematica all'universita'.</li>
+                  </ul>
+
+
+
+
+              </div>
+
+
+
+              <!--
+              Lingue che parlo
+              -->
+
+              <div class="lingue">
+                  <h2 class="section-title">Languages</h2>
+                  <ul class="lingueli">
+                      <li>Italiano <span class="lang-desc">(Native)</span></li>
+                      <li>Inglese <span class="lang-desc">(Professional)</span></li>
+                      <li>Francese <span class="lang-desc">(Professional)</span></li>
+                  </ul>
+              </div>
+
+
+
+          </div>
+        </div>
+
+        <!---------------------------------
+        COLONNA: col2
+        questo e' il secondo div con alcune sezioni al suo interno
+        utilizzando il nome della sua classe col2 e scrivendo CSS specifico, posso modificare la sua apparenza
+        ----------------------------------->
+
+        <div class="col-sm-8">
+          <div class="container col2">
+
+              <section class="section summary-section">
+                  <h2 class="section-title"> Something About me</h2>
+                  <div class="summary">
+                      <p> Adoro viaggiare sia con la famiglia, sia con gli amici.  </p>
+                  </div>
+              </section>
+
+
+
+              <section class="progetti">
+                <h2 class="section-title">Life Goals</h2>
+                <div class="row">
+                  <ul>
+                      <li> trovare un lavoro che mi renda fiera di me stessa ogni giorno</li>
+                      <li> viaggiare</li>
+                      <li> imparare piu' lingue</li>
+
+
+
+                  </ul>
+
+
+
+
+
+                </div>
+
+              </section>
+
+              <section class="passioni">
+                  <h2 class="section-title">Passioni</h2>
+
+                  <div class="row">
+                    <div class="col-sm-6 pass1">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUISEeqW49_Cq6EGo7JFYUiO3nf4WaskfNj2n5gYXXMUQVjbQ2" class="img-thumbnail img-responsive" max-width="200">
+                        <p>Ho fatto danza per otto anni, poi ho dovuto smettere a causa dello studio; ma ne sono ancora innamorata.k</p>
+                    </div>
+                    <div class="col-sm-6 pass2">
+                      <img src="http://cat-bounce.com/cb.png" class="img-thumbnail img-responsive" max-width="200">
+                        <p>Io sono l'esempio di una passione, qui puoi inserire immagini e descrizioni e link</p>
+                    </div>
+
+                  </div>
+              </section>
+
+
+          </div>
+      </div>
+    </div>
+</body>
+</html>
