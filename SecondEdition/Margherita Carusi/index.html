@@ -1,0 +1,200 @@
+
+<!DOCTYPE html>
+
+<!---------------------------------
+HEAD
+le informazioni sull'intestazione della pagina
+----------------------------------->
+
+
+<head>
+    <!-- TITOLO -->
+    <title> Margherita Carusi </title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS BOOTSTRAP-->
+    <link rel="stylesheet" href="bootstrap.css">
+
+    <!-- CSS AGGIUNTIVO -->
+    <!-- NB il CSS che referenzio dopo sovrascrive quello che referenzio prima
+    quindi se chiamo delle classi nello stesso modo del primo nel secondo CSS
+    le sovrascrivo solo per quegli attributi che definisco-->
+
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<!---------------------------------
+BODY
+Il contenuto della pagina
+----------------------------------->
+<body>
+
+
+    <div class="container maincontainer">
+
+
+      <!---------------------------------
+      INTESTAZIONE
+      In questa sezione l'intestazione della pagina visibile; possiamo mettere uno sfondo, o regolarne la grandezza con il CSS
+      ----------------------------------->
+
+
+        <div class="jumbotron"> <!------------ qui se provate a riscrivere la classe jumbotron nel file style.css, potreste aggiungere uno sfondo per esempio-->
+            <!--
+            I miei dati
+            Qui possiamo inserire una nostra foto, il nostro nome e un titolo
+            -->
+            <div class="row intestazione">
+                <!--
+                usando il template di bootstrap, questa immagine, la nostra foto, ha i bordi ed e' responsive
+                -->
+                <div class="col-sm-6">
+                  <img class="img-thumbnail-img-responsive img-fluid"  src="https://scontent-mxp1-1.xx.fbcdn.net/v/t1.0-9/18557145_10213249442454291_5734663956687275188_n.jpg?oh=512b2e088abee0dae99004e3bc295a9a&oe=5B33F01D" style="border-radius:20%">
+                </div>
+                <div class="col-sm-6">
+                  <h1 >Margherita Carusi</h1>
+                  <h3 >Digital assistant with artificial intelligence @<strong>Vodafone</strong></h3>
+                  <h4> <em>Always looking up to the future! </em></h4>
+
+
+                  <br><br><br>
+
+                  <p class="cta"><a class="btn btn-primary btn-lg" >Bottone! &raquo;</a></p>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!---------------------------------
+        COLONNA: col1
+        questo e' il primo div con alcune sezioni al suo interno
+        utilizzando il nome della sua classe col1 e scrivendo CSS specifico, posso modificare la sua apparenza
+        ----------------------------------->
+
+
+
+        <div class="row">
+        <div class="col-sm-4">
+
+          <div class="container col1">
+              <!--
+              I miei contatti
+              -->
+
+              <div class="contact-container container-block">
+                  <ul class="list contact-list">
+                      <li><a href="mailto:nome.cognome@mail.com" >mail</a></li>
+                      <li><a href="#" target="_blank"  >github</a></li>
+                      <li><a href="https://twitter.com/twittername" target="_blank"  >@twittername</a></li>
+                  </ul>
+              </div>
+
+
+
+              <!--
+              I miei studi
+              -->
+
+              <div class="studi">
+                  <h2 class="section-title">Education</h2>
+
+
+                  <!-- Elemento 1-->
+                  <ul class="education">
+                      <li class="nomeed">MSc in Management Engineering</li>
+                      <li class="doveed">Politecnico di Milano</li>
+                      <li class="descrizioneed"> Mission: train engineering professionals ready to address today's business problems with innovative solutions.</li>
+                  </ul>
+
+                  <!-- Elemento 2-->
+
+                  <ul  class="education">
+                      <li class="nomeed">Bachelor's degree in Biomedical Engineering' Classica</li>
+                      <li class="doveed">Politecnico di Milano</li>
+                      <li class="descrizioneed"> Engineering education applied to the medical and biological environment, through deep basic and specialised training in biomedical topics.</li>
+
+                  </ul>
+              </div>
+
+
+
+              <!--
+              Lingue che parlo
+              -->
+
+              <div class="lingue">
+                  <h2 class="section-title">Languages</h2>
+                  <ul class="lingueli">
+                      <li>Italiano <span class="lang-desc">(Native)</span></li>
+                      <li>Inglese <span class="lang-desc">(Professional)</span></li>
+                      <li>Spagnolo <span class="lang-desc">(Beginner)</span></li>
+                  </ul>
+              </div>
+
+
+
+          </div>
+        </div>
+
+        <!---------------------------------
+        COLONNA: col2
+        questo e' il secondo div con alcune sezioni al suo interno
+        utilizzando il nome della sua classe col2 e scrivendo CSS specifico, posso modificare la sua apparenza
+        ----------------------------------->
+
+        <div class="col-sm-8">
+          <div class="container col2">
+
+              <section class="section summary-section">
+                  <h2 class="section-title">About me</h2>
+                  <div class="summary">
+                      <p>Una descrizione di te, piu' lunga di quella in alto (Sono una studentessa, frequento il liceo classico e mi piace creare siti web, nel tempo libero adoro aiutare gatti randagi e andare ai concerti Heavy Metal etc).</p>
+                  </div>
+              </section>
+
+
+
+              <section class="progetti">
+                <h2 class="section-title">Progetti</h2>
+                <div class="row">
+
+                  <div class="col-sm-4 prog1">
+                      <p>Io sono l'esempio di un progetto, qui puoi inserire immagini e descrizioni e link</p>
+                  </div>
+                  <div class="col-sm-4 prog2">
+                      <p>Io sono l'esempio di un progetto, qui puoi inserire immagini e descrizioni e link</p>
+                  </div>
+                  <div class="col-sm-4 prog3">
+                      <p>Io sono l'esempio di un progetto, qui puoi inserire immagini e descrizioni e link</p>
+                  </div>
+
+                </div>
+
+              </section>
+
+              <section class="passioni">
+                  <h2 class="section-title">Passioni</h2>
+
+                  <div class="row">
+                    <div class="col-sm-6 pass1">
+                        <img src="https://lh3.googleusercontent.com/qNw2EO1cktMbForOVIQ9Jd8nsRyFUYuto1LGS_extlLUoBvpHwttdm8d4rqBUIzdCjufLCmclR9UdCx23TClVqG6ztIMnTWcw5Vs373W0uGqBlFK-7jpZl97bo_-SUEih1QnAPyq8NzI1p_188XVw5_Jex-f_Ldyf4vrNhtFIPmvvKmE3fRjTCa9nxUsuQBWYPas5Cft-JkV06za1Oc6WB7zF6cvY1fmzOJhHBQPpt_8vY8Ve9bdCHld4puNV_I0s1Qf3YImY2hFk--UTwkCrMaAXvjf-6m01PKspJrbxxgwZC04uQo-ux_U-dczW2wIT_VvMgoPMdURT9vGzVcybW8CzBZZU7xt-1xmijTIeMdHyUkpMJeyNMEHAwn0hTXlu9xudrqq316Ee4AxHp91kIYmkCrZ8ing1FDwO2n_TBs0uPh7zxInt5cyW39Rc166nLV3iOrz3A9YUuhwyQP3Lt0mzAEjA70Ph6ndL-Y7SUgX9bvmTfdUSxYEN87nXJDjrmrxhTLA_0c1KYpqSZ4lJ6EwtVP3dO2Kpkv6QZFV2E5MzvAoseKWrn1F6jyEhPTrpUXk3oY8G_3ggXO8PnBDSrLdIpHp1551dq7yAK8=w720-h540-no" class="img-thumbnail img-responsive" max-width="200">
+                        <p>Io sono l'esempio di una passione, qui puoi inserire immagini e descrizioni e link</p>
+                    </div>
+                    <div class="col-sm-6 pass2">
+                      <img src="http://cat-bounce.com/cb.png" class="img-thumbnail img-responsive" max-width="200">
+                        <p>skiing</p>
+                    </div>
+
+                  </div>
+              </section>
+
+
+          </div>
+      </div>
+    </div>
+</body>
+</html>
