@@ -23,8 +23,7 @@ intestazione
 **************/
 
 .jumbotron{ /*se volessi modificare lo sfondo della parte alta della pagina, dovrei scrivere qui*/
-
-
+  background-color: aquamarine;
 }
 
 .intestazione h1{
@@ -61,7 +60,7 @@ sezione educazione
 }
 
 .doveed{
-  font-style: italic;
+  font-style: calibri;
 }
 
 img-thumbnail-img-responsive{
