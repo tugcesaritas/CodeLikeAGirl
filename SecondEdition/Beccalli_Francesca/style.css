@@ -3,7 +3,7 @@ Qui modifico tutto il body del mio html
 **************/
 
 body{
-  background-color:#ececec;
+  background-color:white;
 }
 
 
@@ -12,7 +12,7 @@ Qui vado a definire il contenirore del mio contenuto
 **************/
 
 .maincontainer{
-  background-color: rgba(255,255,255, 0.5);
+  background-color: antiquewhite;
   color: inherit;
 }
 
@@ -23,7 +23,8 @@ intestazione
 **************/
 
 .jumbotron{ /*se volessi modificare lo sfondo della parte alta della pagina, dovrei scrivere qui*/
-  background-color: aquamarine;
+background-image:url(https://mbweddingblog.files.wordpress.com/2015/03/palette-pastelli.jpg);
+
 }
 
 .intestazione h1{
@@ -60,7 +61,7 @@ sezione educazione
 }
 
 .doveed{
-  font-style: calibri;
+  font-style: italic;
 }
 
 img-thumbnail-img-responsive{

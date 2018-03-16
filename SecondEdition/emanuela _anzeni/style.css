@@ -12,7 +12,7 @@ Qui vado a definire il contenirore del mio contenuto
 **************/
 
 .maincontainer{
-  background-color: rgba(255,255,255, 0.5);
+  background-color: #6b367e3d;
   color: inherit;
 }
 
@@ -22,8 +22,9 @@ Qui vado a definire il contenirore del mio contenuto
 intestazione
 **************/
 
-.jumbotron{ /*se volessi modificare lo sfondo della parte alta della pagina, dovrei scrivere qui*/
-  background-color: aquamarine;
+.jumbotron{
+  margin: 20px;
+/*se volessi modificare lo sfondo della parte alta della pagina, dovrei scrivere qui*/
 }
 
 .intestazione h1{
@@ -60,9 +61,13 @@ sezione educazione
 }
 
 .doveed{
-  font-style: calibri;
+  font-style: italic;
 }
 
 img-thumbnail-img-responsive{
   border-radius: 20%;
 }
+
+.testodestra{
+  text-align:right;
+  }

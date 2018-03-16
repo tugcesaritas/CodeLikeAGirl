@@ -1,0 +1,205 @@
+
+<!DOCTYPE html>
+
+<!---------------------------------
+HEAD
+le informazioni sull'intestazione della pagina
+----------------------------------->
+
+
+<head>
+    <!-- TITOLO -->
+    <title>My personal page</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS BOOTSTRAP-->
+    <link rel="stylesheet" href="bootstrap.css">
+
+    <!-- CSS AGGIUNTIVO -->
+    <!-- NB il CSS che referenzio dopo sovrascrive quello che referenzio prima
+    quindi se chiamo delle classi nello stesso modo del primo nel secondo CSS
+    le sovrascrivo solo per quegli attributi che definisco-->
+
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<!---------------------------------
+BODY
+Il contenuto della pagina
+----------------------------------->
+<body>
+
+
+    <div class="container maincontainer">
+
+
+      <!---------------------------------
+      INTESTAZIONE
+      In questa sezione l'intestazione della pagina visibile; possiamo mettere uno sfondo, o regolarne la grandezza con il CSS
+      ----------------------------------->
+
+
+        <div class="jumbotron"> <!------------ qui se provate a riscrivere la classe jumbotron nel file style.css, potreste aggiungere uno sfondo per esempio-->
+            <!--
+            I miei dati
+            Qui possiamo inserire una nostra foto, il nostro nome e un titolo
+            -->
+            <div class="row intestazione">
+                <!--
+                usando il template di bootstrap, questa immagine, la nostra foto, ha i bordi ed e' responsive
+                -->
+                <div class="col-sm-6">
+                  <img class="img-thumbnail-img-responsive"  src="Giulia.jpg" style="border-radius:20%" width="400" height="400">
+                </div>
+                <div class="col-sm-6">
+                  <h1>Giulia Sabatini</h1>
+                  <h3>Student</h3>
+                  <h4>I'm a girl, I'm 17 years old and I live in Umbria, Italy.</h4>
+
+
+                  <br><br><br>
+
+                  <p class="cta"><a class="btn btn-primary btn-lg" >Let's see more! &raquo;</a></p>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!---------------------------------
+        COLONNA: col1
+        questo e' il primo div con alcune sezioni al suo interno
+        utilizzando il nome della sua classe col1 e scrivendo CSS specifico, posso modificare la sua apparenza
+        ----------------------------------->
+
+
+
+        <div class="row">
+        <div class="col-sm-4">
+
+          <div class="container col1">
+              <!--
+              I miei contatti
+              -->
+
+              <div class="contact-container container-block">
+                  <ul class="list contact-list">
+                      <li><a href="mailto:sabatinigiulia14@gmail.com" >mail</a></li>
+                      <li><a href="https://github.com/GiuliaSabatini"  >github</a></li>
+                      <li><a href="https://www.facebook.com/giulia.sabatini.5203?ref=bookmarks" target="_blank"  >My Facebook</a></li>
+                  </ul>
+              </div>
+
+
+
+              <!--
+              I miei studi
+              -->
+
+              <div class="studi">
+                  <h2 class="section-title">Education</h2>
+
+
+                  <!-- Elemento 1-->
+                  <ul class="education">
+                      <li class="doveed">Liceo Scientifico Galileo Galilei</li>
+                      <li class="descrizioneed">Fourth year </li>
+                  </ul>
+              </div>
+
+
+
+              <!--
+              Lingue che parlo
+              -->
+
+              <div class="lingue">
+                  <h2 class="section-title">Languages</h2>
+                  <ul class="lingueli">
+                      <li>Italian <span class="lang-desc">(Native)</span></li>
+                      <li>English <span class="lang-desc">(Medium)</span></li>
+                  </ul>
+              </div>
+
+
+
+          </div>
+        </div>
+
+        <!---------------------------------
+        COLONNA: col2
+        questo e' il secondo div con alcune sezioni al suo interno
+        utilizzando il nome della sua classe col2 e scrivendo CSS specifico, posso modificare la sua apparenza
+        ----------------------------------->
+
+        <div class="col-sm-8">
+          <div class="container col2">
+
+              <section class="section summary-section">
+                  <h3 class="section-title">About me</h3>
+                  <div class="summary">
+                      <p>I love travelling, staying with other people and sharing new and amazing things. I  also like testing me every day and strive for the best, becouse I believe in a good future for me.</p>
+                  </div>
+              </Let's see more!
+
+
+
+              <section class="progetti">
+                <h3 class="section-title">People around me...</h3>
+                <div class="row">
+
+<section>
+                  <div class="col-sm-4 prog1">
+                      <h4>My Family</h4>
+                      <img src="fam.jpg" width="400" height="400">
+                  </div>
+                </section>
+
+                <section>
+                  <div class="col-sm-4 prog2">
+                      <h4>My Friends</h4>
+                      <img src="amici.jpg" width="400" height="400">
+                      <img src="tutti.jpg" width="400" height="400>
+                  </div>
+                </section>
+                <section>
+                  <div class="col-sm-4 prog3">
+                      <h4>My Boyfriend</h4>
+                      <img src="tommaso.jpg" width="400" height="400">
+                  </div>
+                </section>
+
+                </div>
+
+              </section>
+ <br>
+ <br>
+              <section class="passioni">
+                  <h2 class="section-title">Me on Instagram</h2>
+
+                  <div class="row">
+                    <div class="col-sm-6 pass1">
+                        <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/BYME3ckjVqu/" data-instgrm-version="8" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:8px;"> <div style=" background:#F8F8F8; line-height:0; margin-top:40px; padding:37.5% 0; text-align:center; width:100%;"> <div style=" background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAMUExURczMzPf399fX1+bm5mzY9AMAAADiSURBVDjLvZXbEsMgCES5/P8/t9FuRVCRmU73JWlzosgSIIZURCjo/ad+EQJJB4Hv8BFt+IDpQoCx1wjOSBFhh2XssxEIYn3ulI/6MNReE07UIWJEv8UEOWDS88LY97kqyTliJKKtuYBbruAyVh5wOHiXmpi5we58Ek028czwyuQdLKPG1Bkb4NnM+VeAnfHqn1k4+GPT6uGQcvu2h2OVuIf/gWUFyy8OWEpdyZSa3aVCqpVoVvzZZ2VTnn2wU8qzVjDDetO90GSy9mVLqtgYSy231MxrY6I2gGqjrTY0L8fxCxfCBbhWrsYYAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;"></div></div> <p style=" margin:8px 0 0 0; padding:0 4px;"> <a href="https://www.instagram.com/p/BYME3ckjVqu/" style=" color:#000; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none; word-wrap:break-word;" target="_blank">❌❌❌</a></p> <p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">A post shared by <a href="https://www.instagram.com/giuliasabatini__/" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px;" target="_blank"> Giulia Sabatini</a> (@giuliasabatini__) on <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2017-08-24T19:43:07+00:00">Aug 24, 2017 at 12:43pm PDT</time></p></div></blockquote> <script async defer src="http://www.instagram.com/embed.js"></script>
+                        <p>This is about last summer</p>
+                        <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/Bf1QT20DiJc/" data-instgrm-version="8" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:8px;"> <div style=" background:#F8F8F8; line-height:0; margin-top:40px; padding:50% 0; text-align:center; width:100%;"> <div style=" background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAMUExURczMzPf399fX1+bm5mzY9AMAAADiSURBVDjLvZXbEsMgCES5/P8/t9FuRVCRmU73JWlzosgSIIZURCjo/ad+EQJJB4Hv8BFt+IDpQoCx1wjOSBFhh2XssxEIYn3ulI/6MNReE07UIWJEv8UEOWDS88LY97kqyTliJKKtuYBbruAyVh5wOHiXmpi5we58Ek028czwyuQdLKPG1Bkb4NnM+VeAnfHqn1k4+GPT6uGQcvu2h2OVuIf/gWUFyy8OWEpdyZSa3aVCqpVoVvzZZ2VTnn2wU8qzVjDDetO90GSy9mVLqtgYSy231MxrY6I2gGqjrTY0L8fxCxfCBbhWrsYYAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;"></div></div> <p style=" margin:8px 0 0 0; padding:0 4px;"> <a href="https://www.instagram.com/p/Bf1QT20DiJc/" style=" color:#000; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none; word-wrap:break-word;" target="_blank">#posetattiche 👌🏻❄️☃️</a></p> <p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">A post shared by <a href="https://www.instagram.com/sophja99/" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px;" target="_blank"> Sofia Anasetti</a> (@sophja99) on <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2018-03-02T19:11:44+00:00">Mar 2, 2018 at 11:11am PST</time></p></div></blockquote> <script async defer src="http://www.instagram.com/embed.js"></script>
+                        <p> Snow in my city </p>
+                    </div>
+                    <div class="col-sm-6 pass2">
+                      <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/BbP2ovhjBOH/" data-instgrm-version="8" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:8px;"> <div style=" background:#F8F8F8; line-height:0; margin-top:40px; padding:33.24074074074074% 0; text-align:center; width:100%;"> <div style=" background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAMUExURczMzPf399fX1+bm5mzY9AMAAADiSURBVDjLvZXbEsMgCES5/P8/t9FuRVCRmU73JWlzosgSIIZURCjo/ad+EQJJB4Hv8BFt+IDpQoCx1wjOSBFhh2XssxEIYn3ulI/6MNReE07UIWJEv8UEOWDS88LY97kqyTliJKKtuYBbruAyVh5wOHiXmpi5we58Ek028czwyuQdLKPG1Bkb4NnM+VeAnfHqn1k4+GPT6uGQcvu2h2OVuIf/gWUFyy8OWEpdyZSa3aVCqpVoVvzZZ2VTnn2wU8qzVjDDetO90GSy9mVLqtgYSy231MxrY6I2gGqjrTY0L8fxCxfCBbhWrsYYAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;"></div></div> <p style=" margin:8px 0 0 0; padding:0 4px;"> <a href="https://www.instagram.com/p/BbP2ovhjBOH/" style=" color:#000; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none; word-wrap:break-word;" target="_blank">Fly on</a></p> <p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">A post shared by <a href="https://www.instagram.com/giuliasabatini__/" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px;" target="_blank"> Giulia Sabatini</a> (@giuliasabatini__) on <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2017-11-08T20:29:55+00:00">Nov 8, 2017 at 12:29pm PST</time></p></div></blockquote> <script async defer src="http://www.instagram.com/embed.js"></script>
+                        <p>Months ago, doing a shooting</p>
+                        <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/BfecmYnDrk4/" data-instgrm-version="8" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:8px;"> <div style=" background:#F8F8F8; line-height:0; margin-top:40px; padding:46.38888888888889% 0; text-align:center; width:100%;"> <div style=" background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAMUExURczMzPf399fX1+bm5mzY9AMAAADiSURBVDjLvZXbEsMgCES5/P8/t9FuRVCRmU73JWlzosgSIIZURCjo/ad+EQJJB4Hv8BFt+IDpQoCx1wjOSBFhh2XssxEIYn3ulI/6MNReE07UIWJEv8UEOWDS88LY97kqyTliJKKtuYBbruAyVh5wOHiXmpi5we58Ek028czwyuQdLKPG1Bkb4NnM+VeAnfHqn1k4+GPT6uGQcvu2h2OVuIf/gWUFyy8OWEpdyZSa3aVCqpVoVvzZZ2VTnn2wU8qzVjDDetO90GSy9mVLqtgYSy231MxrY6I2gGqjrTY0L8fxCxfCBbhWrsYYAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;"></div></div> <p style=" margin:8px 0 0 0; padding:0 4px;"> <a href="https://www.instagram.com/p/BfecmYnDrk4/" style=" color:#000; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none; word-wrap:break-word;" target="_blank">I’ve got something to confess I keep you in my pocket to use You’re my only compass I might get lost without you💫</a></p> <p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">A post shared by <a href="https://www.instagram.com/sophja99/" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px;" target="_blank"> Sofia Anasetti</a> (@sophja99) on <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2018-02-21T22:36:35+00:00">Feb 21, 2018 at 2:36pm PST</time></p></div></blockquote> <script async defer src="http://www.instagram.com/embed.js"></script>
+                        <p> A day in Rome </p>
+                    </div>
+
+                  </div>
+              </section>
+
+
+          </div>
+      </div>
+    </div>
+</body>
+</html>

@@ -2,8 +2,8 @@
 Qui modifico tutto il body del mio html
 **************/
 
-body{
-  background-color:#ececec;
+  body {
+    background-image: url("https://s3-ap-southeast-1.amazonaws.com/subscriber.images/chemistry/2017/04/21115856/bott.png");
 }
 
 
@@ -22,8 +22,8 @@ Qui vado a definire il contenirore del mio contenuto
 intestazione
 **************/
 
-.jumbotron{ /*se volessi modificare lo sfondo della parte alta della pagina, dovrei scrivere qui*/
-  background-color: aquamarine;
+.jumbotron{
+  border:solid black;
 }
 
 .intestazione h1{
@@ -60,7 +60,7 @@ sezione educazione
 }
 
 .doveed{
-  font-style: calibri;
+  font-style: italic;
 }
 
 img-thumbnail-img-responsive{

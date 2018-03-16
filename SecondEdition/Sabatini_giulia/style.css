@@ -4,6 +4,7 @@ Qui modifico tutto il body del mio html
 
 body{
   background-color:#ececec;
+  background-image: url("onda.jpg")
 }
 
 
@@ -23,7 +24,8 @@ intestazione
 **************/
 
 .jumbotron{ /*se volessi modificare lo sfondo della parte alta della pagina, dovrei scrivere qui*/
-  background-color: aquamarine;
+background-color:#cce6ff;
+
 }
 
 .intestazione h1{
@@ -60,9 +62,32 @@ sezione educazione
 }
 
 .doveed{
-  font-style: calibri;
+  font-style: italic;
 }
 
 img-thumbnail-img-responsive{
   border-radius: 20%;
+}
+
+ul {
+  color:#0000cc;
+}
+
+h1{
+  color: #0000cc;
+}
+h3{
+  color:#0000cc;
+}
+h4{
+  color:#0000cc;
+}
+h5{
+  color:#0000cc;
+}
+h2{
+  color:#0000cc;
+}
+p {
+  color:#000066;
 }

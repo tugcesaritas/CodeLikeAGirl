@@ -1,5 +1,6 @@
-<!DOCTYPE html>
 
+<!DOCTYPE html>
+<html>
 <!---------------------------------
 HEAD
 le informazioni sull'intestazione della pagina
@@ -29,7 +30,7 @@ le informazioni sull'intestazione della pagina
 BODY
 Il contenuto della pagina
 ----------------------------------->
-<body background="imag/stelle.jpg">
+<body>
 
 
     <div class="container maincontainer">
@@ -41,7 +42,7 @@ Il contenuto della pagina
       ----------------------------------->
 
 
-        <div class="jumbotron" > <!------------ qui se provate a riscrivere la classe jumbotron nel file style.css, potreste aggiungere uno sfondo per esempio-->
+        <div class="jumbotron"> <!------------ qui se provate a riscrivere la classe jumbotron nel file style.css, potreste aggiungere uno sfondo per esempio-->
             <!--
             I miei dati
             Qui possiamo inserire una nostra foto, il nostro nome e un titolo
@@ -50,19 +51,18 @@ Il contenuto della pagina
                 <!--
                 usando il template di bootstrap, questa immagine, la nostra foto, ha i bordi ed e' responsive
                 -->
-
                 <div class="col-sm-6">
-                  <img class="img-thumbnail-img-responsive"  src="imag/me.png" style="border-radius:10%; width: 1000%; max-width: 400px">
+                  <img class="img-fluid" src="unnamed.jpg" style="border-radius:20%">
                 </div>
                 <div class="col-sm-6">
-                  <h1 style="color: aqua;">Martina Vacante</h1>
-                  <h3 style="color: blue;">studentessa</h3>
-
+                  <h1 > Giulia Guidetti</h1>
+                  <h3 >Studentessa</h3>
+                  <h4> MIlano </h4>
 
 
                   <br><br><br>
 
-                  <p class="cta"><a class="btn btn-primary btn-lg" > scopri qualcosa di me! &raquo;</a></p>
+
                 </div>
 
             </div>
@@ -84,28 +84,30 @@ Il contenuto della pagina
               <!--
               I miei contatti
               -->
-          <h2>Contatti</h2>
-              <ul class="list contact-list" style="color: blue;">
-                      <li><a href="martina.vacante@gmail.com">mail</a></li>
-                      <li><a href="https://www.instagram.com/?hl=it" target="_blank">instagram</a></li>
+
+              <div class="contact-container container-block">
+                  <ul class="list contact-list">
+                      <li><a href="mailto:giulia.guidetti.00@gmail.com" >gmail</a></li>
+                      <li><a href="https://www.instagram.com/guidetti_giulia/"> Giulia Guidetti Instagram</a></li>
+
                   </ul>
               </div>
 
 
 
-              <div class="studi; top:0px; right:0px;">
-                  <h2 class="section-title">sport</h2>
+              <!--
+              I miei studi
+              -->
+
+              <div class="studi">
+                  <h2 class="section-title">My Studies</h2>
 
 
                   <!-- Elemento 1-->
                   <ul class="education">
-                      <li class="nomeed">Danza</li>
-                      <li class="doveed" >
-                      <img src="imag/danza.jpg " class="img-thumbnail img-responsive" max-width="200"> </li>
-
+                      <li class="nomeed"> Liceo Scientifico statale A. Tosi</li
+                      <li class="descrizioneed">Mi piacciono molto le materie scientifiche e, dopo il liceo, sarei interessata a studiare la facoltra' di ingegneria gestionale/matematica all'universita'.</li>
                   </ul>
-
-                  <!-- Elemento 2-->
 
 
 
@@ -119,11 +121,11 @@ Il contenuto della pagina
               -->
 
               <div class="lingue">
-                  <h2 class="section-title">lingue </h2>
+                  <h2 class="section-title">Languages</h2>
                   <ul class="lingueli">
-                      <li>Italiano <span class="lang-desc"> </span></li>
-                      <li>Inglese <span class="lang-desc"> </span></li>
-                      <li>Spagnolo <span class="lang-desc"> </span></li>
+                      <li>Italiano <span class="lang-desc">(Native)</span></li>
+                      <li>Inglese <span class="lang-desc">(Professional)</span></li>
+                      <li>Francese <span class="lang-desc">(Professional)</span></li>
                   </ul>
               </div>
 
@@ -142,33 +144,45 @@ Il contenuto della pagina
           <div class="container col2">
 
               <section class="section summary-section">
-                  <h2 class="section-title">Parlo di me</h2>
+                  <h2 class="section-title"> Something About me</h2>
                   <div class="summary">
-                      <p>Sono una studentessa, frequento la scuola secondaria, mi appasiona l'eletronica e la tecnologia, nel tempo libero adoro leggere, diegnare, ascoltare la musica e ballare.</p>
+                      <p> Adoro viaggiare sia con la famiglia, sia con gli amici.  </p>
                   </div>
               </section>
 
 
+
+              <section class="progetti">
+                <h2 class="section-title">Life Goals</h2>
+                <div class="row">
+                  <ul>
+                      <li> trovare un lavoro che mi renda fiera di me stessa ogni giorno</li>
+                      <li> viaggiare</li>
+                      <li> imparare piu' lingue</li>
+
+
+
+                  </ul>
+
+
+
+
+
+                </div>
+
+              </section>
 
               <section class="passioni">
                   <h2 class="section-title">Passioni</h2>
 
                   <div class="row">
                     <div class="col-sm-6 pass1">
-                        <img src="imag/libri.jpg" class="img-thumbnail img-responsive" max-width="200">
-                        <p> Leggere </p>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUISEeqW49_Cq6EGo7JFYUiO3nf4WaskfNj2n5gYXXMUQVjbQ2" class="img-thumbnail img-responsive" max-width="200">
+                        <p>Ho fatto danza per otto anni, poi ho dovuto smettere a causa dello studio; ma ne sono ancora innamorata.k</p>
                     </div>
                     <div class="col-sm-6 pass2">
-                      <img src="imag/mare.jpg" class="img-thumbnail img-responsive" max-width="200">
-                        <p> Nuotare </p>
-                    </div>
-                    <div class="col-sm-6 pass3">
-                      <img src="imag/stelle.jpg" class="img-thumbnail img-responsive" max-width="200">
-                        <p> Guardare le stelle </p>
-                    </div>
-                    <div class="col-sm-6 pass3">
-                      <img src="imag/foto.jpg" class="img-thumbnail img-responsive" max-width="200">
-                        <p> fotografia </p>
+                      <img src="http://cat-bounce.com/cb.png" class="img-thumbnail img-responsive" max-width="200">
+                        <p>Io sono l'esempio di una passione, qui puoi inserire immagini e descrizioni e link</p>
                     </div>
 
                   </div>
@@ -180,5 +194,3 @@ Il contenuto della pagina
     </div>
 </body>
 </html>
-            </div>
-        </div>
